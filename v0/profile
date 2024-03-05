@@ -5,6 +5,12 @@ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX ex: <https://example.org/>
 
+<https://jitsedesmet.be/profile/>
+    a foaf:Document, foaf:PersonalProfileDocument;
+    rdfs:label "Jitse De Smet’s FOAF profile"@en;
+    foaf:maker :me;
+    foaf:primaryTopic :me.
+
 :me a foaf:Person ;
 #    My name (not counting this as one of the 5 properties)
     foaf:name "Jitse De Smet"^^xsd:string ;
