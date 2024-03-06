@@ -15,14 +15,13 @@ PREFIX ex: <https://example.org/>
 #    My name (not counting this as one of the 5 properties)
     foaf:name "Jitse De Smet"^^xsd:string ;
 #    I know two other studens, I link to them and indicate that I know them.
-    foaf:knows <https://nielspraet.be/#me>,
-                <https://wodsaegh.github.io/> ;
+    foaf:knows <https://wodsaegh.github.io/>,
+                <https://victorronsyn.be/#me> ;
 #    5 other properties
     foaf:givenName "Jitse"^^xsd:string ;
     foaf:familyName "De Smet"^^xsd:string ;
     foaf:birthday "2001-07-23"^^xsd:date ;
     foaf:weblog <https://thesis.jitsedesmet.be/> ;
     foaf:mbox "mailto:jitse.desmet@ugent.be"^^xsd:string ;
-#   describe I am a participant in the Knowledge Graph 2023-2024 course.
-#        MemberOf expects a value of type Organization, I don't see an alternative though.
-    schema:memberOf <https://pietercolpaert.be/teaching/kg/#2023-2024>.
+#   describe I am a participant in the Knowledge Graph 2023-2024 course
+    schema:attendee :me .
