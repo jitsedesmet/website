@@ -13,6 +13,7 @@ homeRouter.get(`/profile`, async (req, res) => {
         root: __dirname + "/static/",
         headers: {
             "Content-Type": "text/turtle"
-        }
+        },
+        maxAge: 10_000
     });
 });
