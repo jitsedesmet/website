@@ -16,7 +16,8 @@ PREFIX ex: <https://example.org/>
     foaf:name "Jitse De Smet"^^xsd:string ;
 #    I know two other studens, I link to them and indicate that I know them.
     foaf:knows <https://wodsaegh.github.io/>,
-                <https://liadsmed.github.io/#me> ;
+               <https://liadsmed.github.io/#me>,
+               <https://nielspraet.github.io/kg-profile/#me>;
 #    5 other properties
     foaf:givenName "Jitse"^^xsd:string ;
     foaf:familyName "De Smet"^^xsd:string ;
