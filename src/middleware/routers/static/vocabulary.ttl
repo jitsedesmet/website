@@ -25,13 +25,13 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
     rdfs:range xsd:string .
 
 :photoTaken a rdf:Property ;
-    rdfs:label "photo-taken"@en ;
+    rdfs:label "photo taken"@en ;
     rdfs:comment "The date the photo was taken."@en ;
     rdfs:domain :Image ;
     rdfs:range xsd:date .
 
 :resourceExpires a rdf:Property ;
-    rdfs:label "resource-expires"@en ;
+    rdfs:label "resource expires"@en ;
     rdfs:comment "The date the resource expires."@en ;
     rdfs:domain :Image ;
     rdfs:range xsd:date .
