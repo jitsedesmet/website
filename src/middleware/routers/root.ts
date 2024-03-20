@@ -17,3 +17,23 @@ homeRouter.get(`/profile`, async (req, res) => {
         maxAge: 10_000
     });
 });
+
+homeRouter.get(`/images`, async (req, res) => {
+    res.status(Status.ok).sendFile("images.ttl", {
+        root: __dirname + "/static/",
+        headers: {
+            "Content-Type": "text/turtle"
+        },
+        maxAge: 10_000
+    });
+});
+
+homeRouter.get(`/vocabulary`, async (req, res) => {
+    res.status(Status.ok).sendFile("vocabulary.ttl", {
+        root: __dirname + "/static/",
+        headers: {
+            "Content-Type": "text/turtle"
+        },
+        maxAge: 10_000
+    });
+});
