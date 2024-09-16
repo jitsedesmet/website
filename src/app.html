@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+<!--	SEO -->
+		<meta property="og:locale" content="en-US">
+		<meta property="og:site_name" content="Jitse De Smet">
+		<meta property="og:title" content="Personal website of Jitse De Smet">
+		<link rel="canonical" href="https://jitsedesmet.be/">
+		<meta property="og:url" content="https://jitsedesmet.be/">
+<!--	End SEO -->
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<link href="/css/inter.scss" rel="stylesheet">
+		<meta name="theme-color" content="#ffffff"/>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover" style="display: contents">
+		%sveltekit.body%
+	</body>
+</html>
+
+<style>
+	* {
+		font-family: "Inter", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 300;
+		font-style: normal;
+		font-variation-settings:
+				"slnt" 0;
+		font-size: 1em;
+		/* can be enabled again color: var(--color-main-text); */
+	}
+	div {
+		color: var(--color-main-text);
+	}
+	ul {
+		padding: 0;
+		list-style-type: none;
+	}
+	a {
+		color: var(--color-main-text);
+	}
+	html {
+		background-color: green;
+		--color-main-bg: #F0F4EF;
+		--color-main-text: green; /* #0D1821; */
+		--color-main-subtext: #344966;
+		--color-main-subsubtext: #B4CDED;
+		--color-main-alternative: #BFCC94;
+		--screen-size-big: 500px;
+	}
+</style>
