@@ -15,12 +15,17 @@
 		<meta name="theme-color" content="#ffffff"/>
 		%sveltekit.head%
 	</head>
-	<body data-sveltekit-preload-data="hover" style="display: contents">
-		%sveltekit.body%
+	<body data-sveltekit-preload-data="hover">
+		<div class="empty" style="display: contents">
+			%sveltekit.body%
+		</div>
 	</body>
 </html>
 
 <style>
+	body {
+		margin: 0;
+	}
 	* {
 		font-family: "Inter", sans-serif;
 		font-optical-sizing: auto;
@@ -32,22 +37,25 @@
 		/* can be enabled again color: var(--color-main-text); */
 	}
 	div {
-		color: var(--color-main-text);
+		color: var(--color-text);
 	}
 	ul {
 		padding: 0;
+		margin: 0;
 		list-style-type: none;
 	}
 	a {
-		color: var(--color-main-text);
+		color: var(--color-text);
 	}
 	html {
-		background-color: green;
-		--color-main-bg: #F0F4EF;
-		--color-main-text: green; /* #0D1821; */
-		--color-main-subtext: #344966;
-		--color-main-subsubtext: #B4CDED;
-		--color-main-alternative: #BFCC94;
+		background-color: var(--color-bg);
+		--color-text: black;
+		--color-opposite-text: white;
+		--color-primary: #0D1821;
+		--color-secondary: #344966;
+		--color-tertiary: #A57F60;
+		--color-quaternary: #DB5A42;
+		--color-bg: #F0F4EF;
 		--screen-size-big: 500px;
 	}
 </style>

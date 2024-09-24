@@ -23,31 +23,45 @@
 <style>
     header {
         grid-area: header;
-        margin: auto;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        color: white;
+        background-color: var(--color-primary);
     }
     nav {
         grid-area: nav;
+        border-radius: 0 0 10px 10px;
+        padding: 0 0 10px 10px;
+        background-color: var(--color-primary);
     }
     aside {
         grid-area: sidebar;
+
         display: flex;
         flex-direction: column;
-        /*background-color: var(--color-main-subsubtext);*/
+        padding: 5px 0 0 10px;
+
+        color: var(--color-opposite-text);
     }
     .main {
         grid-area: main;
+        background-color: var(--color-bg);
+        padding: 10px 0 0 0;
     }
     footer {
         grid-area: footer;
+        padding: 10px;
+        background-color: var(--color-bg);
     }
     .layout {
-        background-color: var(--color-main-bg);
         width: min(1080px, 100svw);
-        min-height: calc(100svh - 20px);
+        min-height: 100svh;
         margin: auto;
-        padding: 10px 20px;
         display: grid;
-        gap: 10px;
+        grid-template-rows: auto auto auto 1fr auto;
         grid-template-areas:
             "header"
             "nav"

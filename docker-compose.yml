@@ -5,4 +5,4 @@ services:
       context: .
       network: host
     ports:
-      - 4173:4173
+      - 1478:4173
