@@ -1,9 +1,9 @@
 <ul>
-    <li><a href="">About Me</a></li>
-    <li><a href="">Blog</a></li>
-    <li><a href="">Projects</a></li>
-    <li><a href="">Publications</a></li>
-    <li><a href="">Presentations</a></li>
+    <li><a href="about">About Me</a></li>
+    <li><a href="blog">Blog</a></li>
+    <li><a href="projects">Projects</a></li>
+    <li><a href="publications">Publications</a></li>
+    <li><a href="presentations">Presentations</a></li>
 </ul>
 
 <style>
@@ -11,10 +11,13 @@
         max-width: 100%;
     }
     a {
+        font-weight: bold;
+        font-size: 1.1rem;
         text-decoration: none;
+        color: white;
     }
     a:hover {
-        font-weight: bold;
+        text-decoration: underline;
     }
     @media (min-width: 500px /* screen-size-big */) {
         ul {

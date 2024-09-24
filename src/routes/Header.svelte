@@ -1,11 +1,19 @@
-<span>
-    Jitse De Smet
-</span>
+<div>
+    <a href="/">Jitse De Smet</a>
+</div>
 
 <style>
-    span {
+    div {
+        margin: auto;
+        padding: 10px;
+    }
+    a {
         font-weight: bold;
         font-size: 30px;
-        color: var(--color-main-text);
+        color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
     }
 </style>

@@ -26,5 +26,9 @@
 		"typescript": "^5.6.2",
 		"vite": "^5.4.5"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"@types/rss": "^0.0.32",
+		"rss": "^1.2.2"
+	}
 }
