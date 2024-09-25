@@ -62,8 +62,7 @@
         box-shadow: 5px 5px 5px 5px var(--color-primary);
     }
     img {
-        height: 60%;
-        width: 60%;
+        height: 100px;
         place-self: center;
         max-width: 100%;
         max-height: 100%;
