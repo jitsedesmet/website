@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"run": "npx nodemon express-src/server.ts",
+		"run": "npm run build && bun run express-src/server.ts",
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",

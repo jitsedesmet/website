@@ -12,6 +12,7 @@ app.use(helmet({
             defaultSrc: ["'self'"],
             styleSrc: ["'self'", "'unsafe-inline'"],
             scriptSrc: ["'self'", "'unsafe-inline'"],
+
             imgSrc: ["'self'"],
             objectSrc: ["'none'"],
             upgradeInsecureRequests: []

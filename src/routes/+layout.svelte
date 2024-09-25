@@ -69,7 +69,7 @@
             "main"
             "footer";
         @media (min-width: 500px /* screen-size-big */) {
-            grid-template-columns: 1fr 4fr;
+            grid-template-columns: 1fr 3fr;
             grid-template-rows: auto auto 1fr auto;
             grid-template-areas:
               "header  header"
