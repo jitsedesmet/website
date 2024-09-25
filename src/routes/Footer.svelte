@@ -10,7 +10,7 @@
             GITHUB
         </a>
         <a href="/blog/rss.xml">
-            <IconsSvg name="rss" height="0.8rem" class="rss" color="#fa9b39"/>
+            <IconsSvg name="rss" height="0.8rem" class="rss" --color="#fa9b39"/>
             RSS FEED
         </a>
     </div>
