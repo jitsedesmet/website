@@ -19,7 +19,13 @@
             It takes the idea of a field guide and makes it digital.
             In this digitalisation, I saw the potential to handle the uncertainty that comes with identifying mushrooms.
         </div>
-        <IconsSvg name="github" height="50px" width="50px"/>
+        <div class="additional-links">
+            <IconsSvg name="github" height="50px" width="50px"
+                      href="https://github.com/jitsedesmet/mush-id"
+                      --color="var(--color-primary)"
+                      --color-hover="var(--color-quaternary)"
+            />
+        </div>
     </a>
     <a class="project" href="https://parent-dev-asd.jitsedesmet.be" target="_blank">
         <img alt="Plan-A logo" src="https://parent-dev-asd.jitsedesmet.be/assets/assets/graphics/logo.png">
@@ -36,7 +42,11 @@
                 In this project, I helped with the development and deployment of the Rust backend.
             </p>
         </div>
-        <IconsSvg name="github" height="50px" width="50px"/>
+        <div class="additional-links">
+<!--            <IconsSvg name="github" height="50px" width="50px"-->
+<!--                      &#45;&#45;color="var(&#45;&#45;color-primary)"-->
+<!--            />-->
+        </div>
     </a>
 </div>
 
@@ -78,5 +88,11 @@
         text-align: center;
         font-size: 1.5em;
         font-weight: bold;
+    }
+    .additional-links {
+        margin-top: auto;
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 </style>

@@ -2,7 +2,7 @@
     export let name: keyof typeof icons;
     export let width = '1rem';
     export let height = '1rem';
-    export let color = 'black';
+    export let href: string | undefined = undefined;
     export let focusable: string | number | null | undefined = undefined;
     let icons = {
         building: {
@@ -33,11 +33,21 @@
     let displayIcon = icons[name];
 </script>
 
-<svg
-        class={$$props.class}
-        style={`fill: ${color};`}
-        {focusable}
-        {width}
-        {height}
-        viewBox="0 0 {displayIcon.box[0]} {displayIcon.box[1]}">{@html displayIcon.svg}</svg
->
+<a {href} class="no-fancy">
+    <svg
+            class={$$props.class}
+            {focusable}
+            {width}
+            {height}
+            viewBox="0 0 {displayIcon.box[0]} {displayIcon.box[1]}">{@html displayIcon.svg}</svg
+    >
+</a>
+
+<style>
+    svg {
+        fill: var(--color, black);
+    }
+    svg:hover {
+        fill: var(--color-hover, var(--color));
+    }
+</style>
