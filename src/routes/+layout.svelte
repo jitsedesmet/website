@@ -49,7 +49,7 @@
     .main {
         grid-area: main;
         background-color: var(--color-bg);
-        padding: 10px 0 0 0;
+        padding: 10px 10px 0 0;
     }
     footer {
         grid-area: footer;
