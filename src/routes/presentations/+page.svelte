@@ -1,7 +1,6 @@
 <svelte:head>
-    <title>Blog | Jitse De Smet</title>
-    <meta name="description" content="Blog of Jitse De Smet">
+    <title>Presentations | Jitse De Smet</title>
+    <meta name="description" content="Presentations of Jitse De Smet">
 </svelte:head>
 
-blep
-
+No presentations yet. Check back later.

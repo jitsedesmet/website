@@ -1,7 +1,3 @@
-<script>
-    import TimeLineItem from "./TimeLineItem.svelte";
-</script>
-
 <svelte:head>
     <title>About Me | Jitse De Smet</title>
     <meta name="description" content="Personal info of Jitse De Smet">
@@ -26,7 +22,11 @@
     like rock climbing which I mostly practice indoors.
     It allows me to spend many of my nights with the amazing friends from the climbing gym.
     Outdoor climbing is of course also amazing!
-    I've enjoyed climbing in the Belgian Ardennes, Albarracin, Fontainebleau, and Magic Wood.
+    I've enjoyed climbing in the
+    <a href="https://www.klimenbergsportfederatie.be/rotsmassieven">Belgian Ardennes</a>,
+    <a href="https://www.google.com/maps/place/44126+Albarracín,+Teruel,+Spain">Albarracin</a>,
+    <a href="https://www.google.com/maps/place/77300+Fontainebleau,+France/">Fontainebleau</a>,
+    and <a href="https://www.google.com/maps/place/Magic+Wood/@46.566847,9.4351112,17z/data=!3m1!4b1!4m6!3m5!1s0x4784f2c609330221:0xc5cbbc821a7dfb59!8m2!3d46.5668433!4d9.4376861!16s%2Fg%2F1ynnq173g?entry=tts&g_ep=EgoyMDI0MDkyMi4wKgBIAVAD">Magic Wood</a>.
 
     Besides climbing, I also like inline skating to escape from other people and be with myself for a bit.
 </p>
@@ -56,7 +56,10 @@
     <div class="institute">
         <a href='https://www.ugent.be/en'>Ghent University</a>
     </div>
-    <div class="info">Collaborated with IDLab / imec to improve their Expression Evaluator Sparqlee used in their Linked Data Query engine Comunica.</div>
+    <div class="info">
+        Collaborated with IDLab / imec to improve their Expression Evaluator Sparqlee used in their Linked Data Query engine
+        <a href="https://comunica.dev/">Comunica</a>.
+    </div>
 
 
     <div class="years">
@@ -66,9 +69,12 @@
         Software developer
     </div>
     <div class="institute">
-        <a href='https://www.ugent.be/en'>Ghent University</a>
+        <a href='https://www.guardsquare.com/'>GuardSquare</a>
     </div>
-    <div class="info">Contributed to the development of the ProGuard project.</div>
+    <div class="info">Increasing debuggability of
+        <a href="https://github.com/Guardsquare/proguard-core">ProGuardCORE</a> project by creating
+        <a href="https://github.com/Mouwrice/proguard-core-visualizer">ProGuardCORE visualizer</a>.
+    </div>
 
     <h2>Education</h2>
     <div class="years">

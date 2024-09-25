@@ -3,5 +3,4 @@
     <meta name="description" content="Blog of Jitse De Smet">
 </svelte:head>
 
-blep
-
+No blog posts yet. Check back later.
