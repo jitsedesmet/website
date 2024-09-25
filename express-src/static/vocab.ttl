@@ -1,0 +1,37 @@
+@prefix : <https://jitsedesmet.be/vocabulary#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Image a rdfs:Class ;
+  rdfs:label "Image"@en ;
+  rdfs:subClassOf foaf:Image ;
+  rdfs:comment "An image resource."@en .
+
+:depicts a rdf:Property ;
+  rdfs:label "depicts"@en ;
+  rdfs:comment "The object depicted in the image."@en ;
+  rdfs:subPropertyOf foaf:depicts ;
+  rdfs:domain :Image ;
+  rdfs:range owl:Thing .
+
+:label a rdf:Property ;
+  rdfs:label "label"@en ;
+  rdfs:comment "A label for the image."@en ;
+  rdfs:subPropertyOf rdfs:label ;
+  rdfs:domain :Image ;
+  rdfs:range xsd:string .
+
+:photoTaken a rdf:Property ;
+  rdfs:label "photo taken"@en ;
+  rdfs:comment "The date the photo was taken."@en ;
+  rdfs:domain :Image ;
+  rdfs:range xsd:date .
+
+:resourceExpires a rdf:Property ;
+  rdfs:label "resource expires"@en ;
+  rdfs:comment "The date the resource expires."@en ;
+  rdfs:domain :Image ;
+  rdfs:range xsd:date .

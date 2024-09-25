@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:latest AS svelte-build
 LABEL authors="jitsedesmet"
 
 WORKDIR /var/www/mushid
@@ -11,6 +11,16 @@ COPY . .
 
 RUN npm run build
 
-EXPOSE 4173
+FROM oven/bun AS runtime
 
-CMD ["npm", "run", "preview", "--", "--host"]
+WORKDIR /var/www/mushid
+
+COPY package.json package-lock.json ./
+RUN bun install --production
+
+COPY --from=svelte-build /var/www/mushid/build /var/www/mushid/build
+COPY express-src /var/www/mushid/express-src
+
+EXPOSE 8080
+
+ENTRYPOINT ["bun", "run", "express-src/server.ts"]
