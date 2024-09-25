@@ -13,7 +13,7 @@ app.use(helmet({
             styleSrc: ["'self'", "'unsafe-inline'"],
             scriptSrc: ["'self'", "'unsafe-inline'"],
 
-            imgSrc: ["'self'"],
+            imgSrc: ["'self'", "*.jitsedesmet.be"],
             objectSrc: ["'none'"],
             upgradeInsecureRequests: []
         }
