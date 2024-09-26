@@ -4,7 +4,7 @@
 </svelte:head>
 
 <p>
-    Dearest reader,<br>
+    Dearest gentle reader,<br>
     My name is <a href="/">Jitse De Smet</a>.
     I am a <a href="publications">doctoral researcher</a> at <a href="http://www.ugent.be/ea/idlab/en">IDLab</a> with the
     <a href="https://knows.idlab.ugent.be/">KNoWS</a> research group.
