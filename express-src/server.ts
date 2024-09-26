@@ -12,16 +12,17 @@ app.use(helmet({
             defaultSrc: ["'self'"],
             styleSrc: ["'self'", "'unsafe-inline'"],
             scriptSrc: ["'self'", "'unsafe-inline'"],
-
+            frameSrc: ["'self'", "*.jitsedesmet.be"],
             imgSrc: ["'self'", "*.jitsedesmet.be"],
             objectSrc: ["'none'"],
             upgradeInsecureRequests: []
         }
     }
 }));
+app.use(cors());
 
 
-app.get(`/profile`, cors(), async (req: Request, res: Response) => {
+app.get(`/profile`, async (req: Request, res: Response) => {
     res.status(Status.ok).sendFile("profile.ttl", {
         root: __dirname + "/static/",
         headers: {
@@ -31,7 +32,7 @@ app.get(`/profile`, cors(), async (req: Request, res: Response) => {
     });
 });
 
-app.get(`/images`, cors(), async (req: Request, res: Response) => {
+app.get(`/images`, async (req: Request, res: Response) => {
     res.status(Status.ok).sendFile("images.ttl", {
         root: __dirname + "/static/",
         headers: {
@@ -41,7 +42,7 @@ app.get(`/images`, cors(), async (req: Request, res: Response) => {
     });
 });
 
-app.get(`/vocabulary`, cors(), async (req: Request, res: Response) => {
+app.get(`/vocabulary`, async (req: Request, res: Response) => {
     res.status(Status.ok).sendFile("vocabulary.ttl", {
         root: __dirname + "/static/",
         headers: {
