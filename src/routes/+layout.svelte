@@ -40,10 +40,7 @@
     aside {
         grid-area: sidebar;
 
-        display: flex;
-        flex-direction: column;
         padding: 5px 0 0 10px;
-
         color: var(--color-opposite-text);
     }
     .main {

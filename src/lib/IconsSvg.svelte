@@ -1,9 +1,10 @@
 <script lang="ts">
     export let name: keyof typeof icons;
-    export let width = '';
+    export let width = undefined;
     export let height = '1rem';
     export let href: string | undefined = undefined;
     export let focusable: string | number | null | undefined = undefined;
+    export let arialLabel: string | undefined = undefined;
     let icons = {
         building: {
             box: [512, 512],
@@ -137,15 +138,28 @@
     let displayIcon = icons[name];
 </script>
 
-<a {href} class="no-fancy">
+{#if href === undefined}
     <svg
             class={$$props.class}
             {focusable}
             {width}
             {height}
-            viewBox="0 0 {displayIcon.box[0]} {displayIcon.box[1]}">{@html displayIcon.svg}</svg
-    >
-</a>
+            viewBox="0 0 {displayIcon.box[0]} {displayIcon.box[1]}">
+        {@html displayIcon.svg}
+    </svg>
+{:else}
+    <a {href} class="no-fancy">
+        <svg
+                class={$$props.class}
+                {focusable}
+                {width}
+                {height}
+                aria-label={arialLabel}
+                viewBox="0 0 {displayIcon.box[0]} {displayIcon.box[1]}">
+            {@html displayIcon.svg}
+        </svg>
+    </a>
+{/if}
 
 <style>
     svg {
