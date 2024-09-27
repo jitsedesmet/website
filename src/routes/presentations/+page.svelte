@@ -28,9 +28,9 @@
         href="https://thesis.jitsedesmet.be/presentation/final-presentation.html"
         title="Storage Guidance Vocab"
     >
-        <iframe title="Final presentation of my masters thesis"
-                src="https://thesis.jitsedesmet.be/presentation/final-presentation.html"
-                slot="img"
+        <img alt="Final presentation of my masters thesis"
+             src="/presentations/thumbnail/master%20thesis%20pressentation.png"
+             slot="img"
         />
         <svelte:fragment slot="info">
             In my masters thesis I created the Storage Guidance Vocabulary (SGV).
