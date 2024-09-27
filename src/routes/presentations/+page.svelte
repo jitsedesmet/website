@@ -29,7 +29,7 @@
         title="Storage Guidance Vocab"
     >
         <img alt="Final presentation of my masters thesis"
-             src="/presentations/thumbnail/master%20thesis%20pressentation.png"
+             src="/presentations/thumbnail/master%20thesis%20presentation.png"
              slot="img"
         />
         <svelte:fragment slot="info">
@@ -67,12 +67,12 @@
 </ProjectGrid>
 
 <style>
-    iframe {
-        border: 0px none;
-        overflow: hidden;
-        pointer-events: none;
-    }
-    img, iframe {
+    /*iframe {*/
+    /*    border: 0px none;*/
+    /*    overflow: hidden;*/
+    /*    pointer-events: none;*/
+    /*}*/
+    img {
         height: 200px;
         place-self: center;
         max-width: 100%;
