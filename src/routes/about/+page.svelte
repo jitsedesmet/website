@@ -42,9 +42,13 @@
         Doctoral researcher
     </div>
     <div class="institute">
-        <a href='https://www.ugent.be/en'>Ghent University</a>
+        <a href='https://www.fwo.be/en/'>FWO fellowship</a>
     </div>
-    <div class="info">Researching abstractions for decentralized data ecosystems.</div>
+    <div class="info">
+        Optimizing Write Performance in Decentralized Personal Data Ecosystems.
+        My PhD is executed at the <a href="https://knows.idlab.ugent.be/">KNoWS group</a> at
+        <a href='https://www.ugent.be/en'>Ghent University</a>.
+    </div>
 
 
     <div class="years">
@@ -63,7 +67,7 @@
 
 
     <div class="years">
-        2019 - 2021
+        2023 - 2023
     </div>
     <div class="title">
         Software developer
