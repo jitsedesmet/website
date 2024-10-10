@@ -3,27 +3,33 @@
 @prefix schema: <http://schema.org/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ex: <https://example.org/> .
+@prefix knows: <https://data.knows.idlab.ugent.be/person/office/#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix frapo: <http://purl.org/cerif/frapo/>.
 
 <https://jitsedesmet.be/profile/>
-  a foaf:Document, foaf:PersonalProfileDocument;
-  rdfs:label "Jitse De Smet’s FOAF profile"@en;
-  foaf:maker :me;
-  foaf:primaryTopic :me.
+    a foaf:Document, foaf:PersonalProfileDocument;
+    rdfs:label "Jitse De Smet’s FOAF profile"@en;
+    foaf:maker :me;
+    foaf:primaryTopic :me.
 
 :me a foaf:Person ;
-#    My name (not counting this as one of the 5 properties)
-  foaf:name "Jitse De Smet"^^xsd:string ;
-#    I know two other studens, I link to them and indicate that I know them.
-  foaf:knows <https://wodsaegh.github.io/>,
-               <https://liadsmed.github.io/#me>,
-               <https://nielspraet.github.io/kg-profile/#me>;
-#    5 other properties
-  foaf:givenName "Jitse"^^xsd:string ;
-  foaf:familyName "De Smet"^^xsd:string ;
-  foaf:birthday "2001-07-23"^^xsd:date ;
-  foaf:weblog <https://thesis.jitsedesmet.be/> ;
-  foaf:mbox "mailto:jitse.desmet@ugent.be"^^xsd:string .
-#   describe I am a participant in the Knowledge Graph 2023-2024 course
+    foaf:name "Jitse De Smet"^^xsd:string ;
+    foaf:givenName "Jitse"^^xsd:string ;
+    foaf:familyName "De Smet"^^xsd:string ;
+    foaf:birthday "2001-07-23"^^xsd:date ;
+    foaf:homepage <https://jitsedesmet.be> ;
+    foaf:weblog <https://thesis.jitsedesmet.be/> , <https://jitsedesmet.be/blog> ;
+    foaf:mbox "mailto:jitse.desmet@ugent.be"^^xsd:string ;
+    foaf:account <https://www.linkedin.com/in/jitse-de-smet-051031206/>,  [
+        a knows:GitHubAccount ;
+        foaf:accountName "jitsedesmet" ;
+        foaf:accountServiceHomepage <https://github.com/>
+    ] ;
+    foaf:img <https://jitsedesmet.be/favicon.png> ;
 
-<https://pietercolpaert.be/teaching/kg/#2023-2024> schema:attendee :me .
+    frapo:hasORCID "0009-0002-6513-5013";
+
+    vcard:title "PhD Student"@en;
+    vcard:role "PhD Student"@en;
+    vcard:organization-name "Ghent University" .
