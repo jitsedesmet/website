@@ -65,7 +65,7 @@
         grid-area: info-list;
     }
     li {
-        margin: 0.2rem 0;
+        margin: 0.4rem 0;
         white-space: nowrap;
     }
 
