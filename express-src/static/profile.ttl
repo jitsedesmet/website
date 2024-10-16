@@ -29,6 +29,7 @@
     foaf:img <https://jitsedesmet.be/favicon.png> ;
 
     frapo:hasORCID "0009-0002-6513-5013";
+    <http://www.w3.org/ns/solid/terms#oidcIssuerRegistrationToken> "2b963d2e-c58e-40bb-8f0b-d976a3a1e39a" ;
 
     vcard:title "PhD Student"@en;
     vcard:role "PhD Student"@en;
