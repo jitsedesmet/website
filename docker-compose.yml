@@ -1,8 +1,0 @@
-services:
-  app:
-    restart: always
-    build:
-      context: .
-      network: host
-    ports:
-      - 1478:8080
