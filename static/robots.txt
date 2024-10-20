@@ -1,6 +1,4 @@
 User-agent: *
-Allow: /$
-Allow: robots.txt
-Disallow: /
+Allow: /
 
 Sitemap: https://jitsedesmet.be/sitemap.xml
