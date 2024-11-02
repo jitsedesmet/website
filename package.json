@@ -12,21 +12,24 @@
 		"lint": "eslint ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^3.2.4",
-		"@sveltejs/adapter-node": "^5.2.4",
-		"@sveltejs/kit": "^2.5.27",
-		"@sveltejs/vite-plugin-svelte": "^3.1.2",
+		"@sveltejs/adapter-auto": "^3.3.1",
+		"@sveltejs/adapter-node": "^5.2.9",
+		"@sveltejs/kit": "^2.7.4",
+		"@sveltejs/vite-plugin-svelte": "^4.0.0",
 		"@types/eslint": "^9.6.1",
-		"@typescript-eslint/eslint-plugin": "^8.5.0",
-		"@typescript-eslint/parser": "^8.5.0",
-		"eslint": "^9.10.0",
-		"eslint-plugin-svelte": "^2.44.0",
+		"@typescript-eslint/eslint-plugin": "^8.12.2",
+		"@typescript-eslint/parser": "^8.12.2",
+		"eslint": "^9.14.0",
+		"eslint-plugin-svelte": "^2.46.0",
 		"super-sitemap": "^0.15.1",
-		"svelte": "^4.2.19",
-		"svelte-check": "^4.0.2",
-		"tslib": "^2.7.0",
-		"typescript": "^5.6.2",
-		"vite": "^5.4.5"
+		"svelte": "^5.1.9",
+		"svelte-check": "^4.0.5",
+		"tslib": "^2.8.1",
+		"typescript": "^5.6.3",
+		"vite": "^5.4.10"
+	},
+	"overrides": {
+		"@sveltejs/vite-plugin-svelte": "^4.0.0"
 	},
 	"type": "module",
 	"dependencies": {
@@ -34,8 +37,8 @@
 		"@types/express": "^4.17.21",
 		"@types/rss": "^0.0.32",
 		"cors": "^2.8.5",
-		"express": "^4.21.0",
-		"helmet": "^7.1.0",
+		"express": "^4.21.1",
+		"helmet": "^8.0.0",
 		"rss": "^1.2.2"
 	}
 }
