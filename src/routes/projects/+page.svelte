@@ -32,11 +32,11 @@
         {/snippet}
     </LinkProjectBox>
     <LinkProjectBox
-        href="https://parent-dev-asd.jitsedesmet.be"
+        href="https://plan-a.app/"
         title="Plan-A"
     >
         {#snippet img()}
-            <img  alt="Plan-A logo" src="https://parent-dev-asd.jitsedesmet.be/assets/assets/graphics/logo.png">
+            <img  alt="Plan-A logo" src="https://plan-a.app/assets/assets/graphics/logo.png">
         {/snippet}
         {#snippet info()}
             <p>
