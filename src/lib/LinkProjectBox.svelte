@@ -1,22 +1,30 @@
 <script lang="ts">
-    export let href: undefined | string = undefined;
-    export let title = '';
+    import type {Snippet} from "svelte";
+
+    interface Props {
+        additionalLinks?: Snippet;
+        info?: Snippet;
+        img?: Snippet;
+        href?: string;
+        title?: string;
+    }
+    let { additionalLinks, info, img, href, title = '' }: Props = $props();
 </script>
 
 <a class="project" {href} target="_blank">
-    <slot name="img"/>
+    {@render img?.()}
 
     <div class="title">
         {title}
     </div>
 
     <div class="info">
-        <slot name="info"/>
+        {@render info?.()}
     </div>
 
-    {#if $$slots["additional-links"]}
+    {#if additionalLinks}
         <div class="additional-links">
-            <slot name="additional-links"/>
+            {@render additionalLinks()}
         </div>
     {/if}
 </a>

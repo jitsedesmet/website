@@ -1,8 +1,14 @@
-<script>
+<script lang="ts">
     import Nav from "./Nav.svelte";
     import InformationSideBar from "./InformaticSideBar.svelte";
     import Footer from "./Footer.svelte";
     import Header from "./Header.svelte";
+    import type {Snippet} from "svelte";
+
+    interface Props {
+        children?: Snippet;
+    }
+    let { children }: Props = $props();
 </script>
 
 <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Realizing_common_layouts_using_grids -->
@@ -15,7 +21,7 @@
         <InformationSideBar/>
     </aside>
     <div class="main">
-        <slot></slot>
+        {@render children?.()}
     </div>
     <footer><Footer/></footer>
 </div>

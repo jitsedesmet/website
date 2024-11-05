@@ -14,31 +14,30 @@
             href="/presentations/FWO%20interview%202024.pdf"
             title="FWO interview 2024"
     >
-        <img alt="Optimizing Write Performance in Decentralized Personal Data Ecosystems"
-             src="/presentations/thumbnail/FWO%20interview%202024.png"
-             slot="img"
-        />
-        <svelte:fragment slot="info">
+        {#snippet img()}
+            <img alt="Optimizing Write Performance in Decentralized Personal Data Ecosystems"
+                 src="/presentations/thumbnail/FWO%20interview%202024.png" />
+        {/snippet}
+        {#snippet info()}
             FWO interview presentation for my proposal
             "Optimizing Write Performance in Decentralized Personal Data Ecosystems".
-        </svelte:fragment>
-
+        {/snippet}
     </LinkProjectBox>
     <LinkProjectBox
         href="https://thesis.jitsedesmet.be/presentation/final-presentation.html"
         title="Storage Guidance Vocab"
     >
-        <img alt="Final presentation of my masters thesis"
-             src="/presentations/thumbnail/master%20thesis%20presentation.png"
-             slot="img"
-        />
-        <svelte:fragment slot="info">
+        {#snippet img()}
+            <img alt="Final presentation of my masters thesis"
+             src="/presentations/thumbnail/master%20thesis%20presentation.png"/>
+        {/snippet}
+        {#snippet info()}
             In my masters thesis I created the Storage Guidance Vocabulary (SGV).
             Using SGV automated clients are able to determine the intended storage location of data in a
             <a href="https://www.w3.org/TR/ldp/">LDP</a>
             interface.
-        </svelte:fragment>
-        <svelte:fragment slot="additional-links">
+        {/snippet}
+        {#snippet additionalLinks()}
             <IconsSvg name="globe" height="30px"
                       href="https://thesis.jitsedesmet.be/"
                       arialLabel="Learn more about my thesis on my dedicated thesis website"
@@ -61,17 +60,12 @@
                       href="https://github.com/jitsedesmet/sgv-update-engine"
                       --color-hover="var(--color-quaternary)"
             />
-        </svelte:fragment>
+        {/snippet}
     </LinkProjectBox>
 
 </ProjectGrid>
 
 <style>
-    /*iframe {*/
-    /*    border: 0px none;*/
-    /*    overflow: hidden;*/
-    /*    pointer-events: none;*/
-    /*}*/
     img {
         height: 200px;
         place-self: center;
