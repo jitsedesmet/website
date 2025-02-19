@@ -6,20 +6,36 @@
   import { goto} from "$app/navigation";
 
   const POD = {
-    BY_CREATION: 'http://localhost:3000/pods/by-creation/',
-    BY_LOCATION: 'http://localhost:3000/pods/by-location/',
-    SEPARATE: 'http://localhost:3000/pods/separate/',
-    TOGETHER: 'http://localhost:3000/pods/together/'
+    BY_CREATION: 'http://localhost:3000/pods/00000000000000000065/',
+    BY_LOCATION: 'http://localhost:3000/pods/00000000000000000150/',
+    SEPARATE: 'http://localhost:3000/pods/00000000000000000143/',
+    TOGETHER: 'http://localhost:3000/pods/00000000000000000094/'
+  }
+  const POD_MAP = {
+    ['http://localhost:3000/pods/00000000000000000065/']: 'pods/by-creation/',
+    ['http://localhost:3000/pods/00000000000000000150/']: 'pods/by-location/',
+    ['http://localhost:3000/pods/00000000000000000143/']: 'pods/separate/',
+    ['http://localhost:3000/pods/00000000000000000094/']: 'pods/together/',
+  }
+  const demoQueries = {
+    ['first demo']: `select * where {
+?s ?p ?o
+}`,
+    ['second demo']: `select * where {
+?s ?p ?o
+} limit 10`,
   }
 
-  function yasge(element: HTMLElement) {
+  interface YasgeContext {
+    query: string | undefined;
+  }
+  function yasge(element: HTMLElement, { query: startQuery }: YasgeContext) {
     const yasqe = new Yasqe(element, {});
-    yasqe.on("change", () => {
-      query = yasqe.getValue();
-    });
+    if (startQuery !== undefined) yasqe.setValue(startQuery);
     return {
-      update(newQuery: string) {
-        yasqe.setValue(newQuery);
+      update({ query: newQuery }: YasgeContext) {
+        if (newQuery !== undefined) yasqe.setValue(newQuery);
+        query = undefined;
       },
       destroy() {
         yasqe.destroy();
@@ -27,7 +43,7 @@
     };
   }
 
-  let query = $state<string>('');
+  let query = $state<string | undefined>(undefined);
   let pod = $state<string>(POD.BY_CREATION);
   let source = $derived<string>(page.url.searchParams.get('source') ?? POD.BY_CREATION);
 
@@ -40,13 +56,23 @@
     const res = triples.map(triple => triple.map(part => {
       if (part[0] === '<' && part[part.length - 1] === '>') {
         const href = '?source=' + encodeURIComponent(part.slice(1, -1));
-        return {str: part, href };
+        let str = part;
+        for (const [key, value] of Object.entries(POD_MAP)) {
+            str = str.replace(key, value);
+        }
+        return { str, href };
       }
       return {str: part};
     }))
     return res as { str: string; href?: string }[][];
   });
 </script>
+
+<div class="demo-group">
+    {#each Object.entries(demoQueries) as [name, demoQuery]}
+        <button onclick={() => query = demoQuery}>{name}</button>
+    {/each}
+</div>
 
 <select bind:value={pod} onchange={() => goto(`?source=${pod}`)}>
     <option value={POD.BY_CREATION}>By Creation Date</option>
@@ -55,13 +81,13 @@
     <option value={POD.TOGETHER}>Together</option>
 </select>
 
-<div use:yasge class="yasge"></div>
-{query}
+Corresponds to pod: <a href={pod}>{pod}</a>
 
+
+<div use:yasge={{ query }} class="yasge"></div>
+{query}
 <br>
-{pod}
-<br>
-{source}
+<a class="no-fancy" href={source}>open source</a>
 
 <div class="browser">
     {#await content}
