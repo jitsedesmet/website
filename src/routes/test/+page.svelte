@@ -26,12 +26,14 @@
 } limit 10`,
   }
 
+
   interface YasgeContext {
     query: string | undefined;
   }
   function yasge(element: HTMLElement, { query: startQuery }: YasgeContext) {
     const yasqe = new Yasqe(element, {});
     if (startQuery !== undefined) yasqe.setValue(startQuery);
+    yasqe.on('query', () => console.log(yasqe.getValue()));
     return {
       update({ query: newQuery }: YasgeContext) {
         if (newQuery !== undefined) yasqe.setValue(newQuery);
