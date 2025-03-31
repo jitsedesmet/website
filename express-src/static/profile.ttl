@@ -14,9 +14,13 @@
     foaf:primaryTopic :me.
 
 :me a foaf:Person ;
-    foaf:name "Jitse De Smet"^^xsd:string ;
-    foaf:givenName "Jitse"^^xsd:string ;
-    foaf:familyName "De Smet"^^xsd:string ;
+    foaf:name "Ruben #5"^^xsd:string ;
+    foaf:givenName "Ruben"^^xsd:string ;
+    foaf:familyName "#5"^^xsd:string ;
+    schema:alternateName "Jitse De Smet" ;
+#    foaf:name "Jitse De Smet"^^xsd:string ;
+#    foaf:givenName "Jitse"^^xsd:string ;
+#    foaf:familyName "De Smet"^^xsd:string ;
     foaf:birthday "2001-07-23"^^xsd:date ;
     foaf:homepage <https://jitsedesmet.be> ;
     foaf:weblog <https://thesis.jitsedesmet.be/> , <https://jitsedesmet.be/blog> ;
