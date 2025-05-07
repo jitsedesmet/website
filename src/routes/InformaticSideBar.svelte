@@ -59,7 +59,7 @@
         grid-area: bibliography;
 
         font-size: 0.75rem;
-        color: var(--color-secondary);
+        color: var(--color-primary);
     }
     .info-list {
         grid-area: info-list;

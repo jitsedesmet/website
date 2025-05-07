@@ -50,15 +50,17 @@
 		color: var(--color-text);
 	}
 	html {
-		background-color: var(--color-bg);
-		--color-text: black;
-		--color-opposite-text: white;
-		--color-primary: #0D1821;
-		--color-secondary: #344966;
-		--color-tertiary: #A57F60;
-		--color-quaternary: #DB5A42;
-		--color-bg: #F0F4EF;
+		--color-primary: #1a2238;
+		--color-secondary: #d8deff;
+		--color-tertiary: #ff6a3d;
+		--color-quaternary: #f4db7d;
+
+		--color-bg: white;
+        --color-text: var(--color-primary);
+
 		--screen-size-big: 500px;
+
+        background-color: var(--color-bg);
 	}
 	.main a {
 		color: inherit;
@@ -71,8 +73,8 @@
 				),
 				linear-gradient(
 						to right,
-						var(--color-quaternary),
-						var(--color-quaternary)
+						var(--color-tertiary),
+						var(--color-tertiary)
 				);
 		background-size: 100% 2px, 0 2px;
 		background-position: 100% 100%, 0 100%;

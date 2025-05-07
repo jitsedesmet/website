@@ -31,7 +31,7 @@
 
 <style>
     .project {
-        background: white;
+        background: var(--color-secondary);
         padding: 20px;
         border-radius: 25px;
         display: flex;
@@ -48,7 +48,7 @@
         font-weight: bold;
     }
     .info {
-        color: var(--color-secondary);
+        color: var(--color-primary);
         font-style: italic;
         text-justify: auto;
         text-align: justify;

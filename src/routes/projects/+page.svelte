@@ -36,7 +36,7 @@
         title="Plan-A"
     >
         {#snippet img()}
-            <img  alt="Plan-A logo" src="https://plan-a.app/assets/assets/graphics/logo.png">
+            <img  alt="Plan-A logo" src="https://plan-a.app/favicon.png">
         {/snippet}
         {#snippet info()}
             <p>

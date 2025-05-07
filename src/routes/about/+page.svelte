@@ -142,7 +142,7 @@
     .info {
         font-size: 1em;
         font-style: italic;
-        color: var(--color-secondary);
+        color: var(--color-primary);
         margin: 0 0 1rem 0;
     }
     .institute {
