@@ -36,13 +36,13 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
             <IconsSvg name="laptopCode" height="30px"
                       href="https://sgf.demo.jitsedesmet.be/"
                       arialLabel="Try the demo live"
-                      --color-hover="var(--color-quaternary)"
+                      --color-hover="var(--color-tertiary)"
             />
             <IconsSvg name="github" height="30px"
                       arialLabel="Explore the source code of the SGV update engine"
                       alt="Typescript"
                       href="https://github.com/jitsedesmet/sgv-update-engine"
-                      --color-hover="var(--color-quaternary)"
+                      --color-hover="var(--color-tertiary)"
             />
         {/snippet}
     </LinkProjectBox>

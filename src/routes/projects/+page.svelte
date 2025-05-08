@@ -27,7 +27,7 @@
             <IconsSvg name="github" height="30px"
                       href="https://github.com/jitsedesmet/mush-id"
                       arialLabel="Explore the source code of mush-id"
-                      --color-hover="var(--color-quaternary)"
+                      --color-hover="var(--color-tertiary)"
             />
         {/snippet}
     </LinkProjectBox>

@@ -41,24 +41,24 @@
             <IconsSvg name="globe" height="30px"
                       href="https://thesis.jitsedesmet.be/"
                       arialLabel="Learn more about my thesis on my dedicated thesis website"
-                      --color-hover="var(--color-quaternary)"
+                      --color-hover="var(--color-tertiary)"
             />
             <IconsSvg name="github" height="30px"
                       href="https://github.com/jitsedesmet/thesis"
                       arialLabel="Explore source code of thesis website"
-                      --color-hover="var(--color-quaternary)"
+                      --color-hover="var(--color-tertiary)"
             />
 
             <IconsSvg name="filePDF" height="30px"
                       href="https://thesis.jitsedesmet.be/solution/report.pdf"
                       arialLabel="Read the thesis report"
-                      --color-hover="var(--color-quaternary)"
+                      --color-hover="var(--color-tertiary)"
             />
             <IconsSvg name="ts" height="30px"
                       arialLabel="Explore the source code of the SGV update engine"
                       alt="Typescript"
                       href="https://github.com/jitsedesmet/sgv-update-engine"
-                      --color-hover="var(--color-quaternary)"
+                      --color-hover="var(--color-tertiary)"
             />
         {/snippet}
     </LinkProjectBox>
