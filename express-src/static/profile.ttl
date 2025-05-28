@@ -6,6 +6,10 @@
 @prefix knows: <https://data.knows.idlab.ugent.be/person/office/#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix frapo: <http://purl.org/cerif/frapo/>.
+@prefix dbp: <http://dbpedia.org/resource/> .
+@prefix bibframe: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix vivo:     <http://vivoweb.org/ontology/core#> .
+
 
 <https://jitsedesmet.be/profile/>
     a foaf:Document, foaf:PersonalProfileDocument;
@@ -34,3 +38,51 @@
     vcard:title "PhD Student"@en;
     vcard:role "PhD Student"@en;
     vcard:organization-name "Ghent University" .
+
+<https://phd-symposium-eswc-2025.jitsedesmet.be/>
+    a schema:ScholarlyArticle, schema:CreativeWork ;
+    schema:creator :me ; foaf:maker :me ; schema:author :me ;
+    schema:name "Optimizing Write Performance in Decentralized Data Ecosystems"@en ;
+    schema:abstract """There is growing interest in sharing self-governed, non-public data across organisational structures.
+In response, interest in decentralized data ecosystems increased, and systems like Solid, IDSA, and Gaia-X started being developed.
+These systems aim to boost data interoperability and allow authorized third parties to write to restricted sets of organisations’ data.
+Decentralized data ecosystems are being developed to support various use-cases, each with different optimal data structures and interfaces.
+To create a unified data ecosystem, these systems must embrace data and interface heterogeneity.
+However, this heterogeneity complicates interactions with the data ecosystem, as data-consumers like developers and data analysts need to know how to interact with each interface.
+To address these complexities, data reading has been abstracted using declarative queries.
+Unfortunately, read abstraction solutions are not fully transferable to writing, even though writing is vital in a living data ecosystem.
+My PhD investigates how we can abstract writing over heterogeneous data sources.
+Tackling the fundamental challenges of abstracting complexities involving updates over decentralized data ecosystems which are permissioned, heterogeneous in both data and interface, decentralized, and have no central authority for managing updates.
+As a result, data-consumers will be able to interact with the data ecosystem without needing to know how to interact with individual interfaces.
+This research will accelerate the adoption of decentralized data ecosystems by significantly lowering the barrier towards creating write-based apps on top of them."""@en ;
+    schema:contributor knows: ;
+    schema:about dbp:Semantic_Web ;
+    bibframe:contribution [
+        a bibframe:Contribution ;
+        bibframe:agent :me ;
+        vivo:rank 0;
+    ] ;
+    schema:datePublished "2025-06-01"^^xsd:date .
+
+<https://sgf-demo-eswc-2025.jitsedesmet.be/>
+    a schema:ScholarlyArticle, schema:CreativeWork ;
+    schema:creator :me ; foaf:maker :me ; schema:author :me ;
+    schema:name "SGF: SPARQL Updates over Decentralized Knowledge Graphs without Access Path Dependencies"@en ;
+    schema:abstract """Decentralized data ecosystems, such as the Solid project, empower users to control their data but introduce complexities in data storage and retrieval.
+Current solutions provide mechanisms for describing data structures but lack sufficient guidance for determining where to create or update resources.
+To address this challenge, we propose the Storage Guiding Framework (SGF), a framework that enables clients to manage RDF resource storage within Solid pods.
+This paper introduces SGF, detailing the describing structure and how SGF allows clients to treat Solid pods as RDF collections rather than a collection of unstructured HTTP documents.
+Our findings show that SGV enhances data accessibility by eliminating the access path data-dependency and providing clear storage strategies.
+This improvement simplifies client-side data management while maintaining flexibility in data organization."""@en ;
+    schema:contributor knows: ;
+    schema:about dbp:Semantic_Web ;
+    bibframe:contribution [
+          a bibframe:Contribution ;
+          bibframe:agent :me ;
+          vivo:rank 0 ;
+      ], [
+          a bibframe:Contribution ;
+          bibframe:agent <https://www.rubensworks.net/#me> ;
+          vivo:rank 1 ;
+      ] ;
+    schema:datePublished "2025-06-01"^^xsd:date .

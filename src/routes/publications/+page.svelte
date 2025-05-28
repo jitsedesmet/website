@@ -21,6 +21,19 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
                 call for Ph.D. Symposium
             </a>
         {/snippet}
+        {#snippet additionalLinks()}
+            <IconsSvg name="slideshow" height="30px"
+                      arialLabel="slides used at ESWC 2025"
+                      href="https://phd-symposium-2025.slides.jitsedesmet.be/"
+                      --color-hover="var(--color-tertiary)"
+            />
+            <IconsSvg name="fileA0" height="30px"
+                      arialLabel="look at the poster for the SGF demo"
+                      href="/posters/2025-phd-symp.pdf"
+                      target="_blank"
+                      --color-hover="var(--color-tertiary)"
+            />
+        {/snippet}
     </LinkProjectBox>
     <LinkProjectBox
             href="https://sgf-demo-eswc-2025.jitsedesmet.be/"
@@ -39,9 +52,14 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
                       --color-hover="var(--color-tertiary)"
             />
             <IconsSvg name="github" height="30px"
-                      arialLabel="Explore the source code of the SGV update engine"
-                      alt="Typescript"
+                      arialLabel="Explore the source code of the SGF update engine"
                       href="https://github.com/jitsedesmet/sgv-update-engine"
+                      --color-hover="var(--color-tertiary)"
+            />
+            <IconsSvg name="fileA0" height="30px"
+                      arialLabel="look at the poster for the SGF demo"
+                      href="/posters/2025-demo-sgf.pdf"
+                      target="_blank"
                       --color-hover="var(--color-tertiary)"
             />
         {/snippet}
