@@ -51,6 +51,12 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
                       arialLabel="Try the demo live"
                       --color-hover="var(--color-tertiary)"
             />
+            <IconsSvg name="youtube" height="30px"
+                      arialLabel="look at the SGF demo on YouTube"
+                      href="https://youtu.be/4xJFaYyCSIg"
+                      target="_blank"
+                      --color-hover="var(--color-tertiary)"
+            />
             <IconsSvg name="github" height="30px"
                       arialLabel="Explore the source code of the SGF update engine"
                       href="https://github.com/jitsedesmet/sgv-update-engine"
