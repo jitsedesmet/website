@@ -15,7 +15,7 @@
         </a>
     </div>
     <div class="licence">
-        ©2024-2024 Jitse De Smet
+        ©2024-2025 Jitse De Smet
         <br>
         Contents of this website are licensed under
         <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> except otherwise noted.
