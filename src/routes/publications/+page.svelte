@@ -12,6 +12,25 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
 
 <ProjectGrid>
     <LinkProjectBox
+            href="https://traqula-demo-semantics-2025.jitsedesmet.be/"
+            title="Towards tackling SPARQL heterogeneity through modular parsing"
+    >
+        {#snippet info()}
+            In reply of
+            <a href="https://2025-eu.semantics.cc/">SEMANTiCS'25</a>
+            <a href="https://semantics2025.semdev.org/">
+                Developers Workshop call for papers/ Software talk
+            </a>
+        {/snippet}
+        {#snippet additionalLinks()}
+            <IconsSvg name="slideshow" height="30px"
+                      arialLabel="slides used at the workshop"
+                      href="https://modular-parsing.demo.jitsedesmet.be/"
+                      --color-hover="var(--color-tertiary)"
+            />
+        {/snippet}
+    </LinkProjectBox>
+    <LinkProjectBox
             href="https://phd-symposium-eswc-2025.jitsedesmet.be/"
             title="Optimizing Write Performance in Decentralized Data Ecosystems"
     >
