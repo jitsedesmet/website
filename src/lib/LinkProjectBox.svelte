@@ -1,5 +1,6 @@
 <script lang="ts">
     import type {Snippet} from "svelte";
+    import IconsSvg from "$lib/IconsSvg.svelte";
 
     interface Props {
         additionalLinks?: Snippet;
@@ -15,7 +16,7 @@
     {@render img?.()}
 
     <div class="title">
-        {title}
+        {title} <IconsSvg name="external"/>
     </div>
 
     <div class="info">
