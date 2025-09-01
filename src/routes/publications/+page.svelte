@@ -27,6 +27,13 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
                       arialLabel="slides used at the workshop"
                       href="https://modular-parsing.demo.jitsedesmet.be/"
                       --color-hover="var(--color-tertiary)"
+                      target="_blank"
+            />
+            <IconsSvg name="github" height="30px"
+                      arialLabel="Explore the source code of the parsers constructed during the demo"
+                      href="https://github.com/jitsedesmet/2025-semdev-demo"
+                      --color-hover="var(--color-tertiary)"
+                      target="_blank"
             />
         {/snippet}
     </LinkProjectBox>
@@ -45,6 +52,7 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
                       arialLabel="slides used at ESWC 2025"
                       href="https://phd-symposium-2025.slides.jitsedesmet.be/"
                       --color-hover="var(--color-tertiary)"
+                      target="_blank"
             />
             <IconsSvg name="fileA0" height="30px"
                       arialLabel="look at the poster for the SGF demo"
@@ -68,6 +76,7 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
             <IconsSvg name="laptopCode" height="30px"
                       href="https://sgf.demo.jitsedesmet.be/"
                       arialLabel="Try the demo live"
+                      target="_blank"
                       --color-hover="var(--color-tertiary)"
             />
             <IconsSvg name="youtube" height="30px"
@@ -79,6 +88,7 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
             <IconsSvg name="github" height="30px"
                       arialLabel="Explore the source code of the SGF update engine"
                       href="https://github.com/jitsedesmet/sgv-update-engine"
+                      target="_blank"
                       --color-hover="var(--color-tertiary)"
             />
             <IconsSvg name="fileA0" height="30px"

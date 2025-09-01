@@ -16,23 +16,23 @@
     <ul class="info-list">
         <li>
             <IconsSvg name="locationDot"/>
-            <a href="https://www.google.com/maps/place/Ghent/">Ghent, Belgium</a>
+            <a href="https://www.google.com/maps/place/Ghent/" target="_blank">Ghent, Belgium</a>
         </li>
         <li>
             <IconsSvg name="building"/>
-            <a href="https://www.ugent.be/en">Ghent University</a>
+            <a href="https://www.ugent.be/en" target="_blank">Ghent University</a>
         </li>
         <li>
             <IconsSvg name="envelope"/>
-            <a href="mailto:jitse.desmet@ugent.be">jitse.desmet@ugent.be</a>
+            <a href="mailto:jitse.desmet@ugent.be" target="_blank">jitse.desmet@ugent.be</a>
         </li>
         <li>
             <IconsSvg name="github"/>
-            <a href="https://github.com/jitsedesmet/">GitHub</a>
+            <a href="https://github.com/jitsedesmet/" target="_blank">GitHub</a>
         </li>
         <li>
             <IconsSvg name="linkedIn"/>
-            <a href="https://www.linkedin.com/in/jitse-de-smet-051031206/">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/jitse-de-smet-051031206/" target="_blank">LinkedIn</a>
         </li>
     </ul>
 </div>
