@@ -12,6 +12,26 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
 
 <ProjectGrid>
     <LinkProjectBox
+            href="https://interface-data-description-hyperagents-2025.jitsedesmet.be/"
+            title="A Vision on Algebraic Flows for Declarative Resource Descriptions"
+    >
+        {#snippet info()}
+            In reply of
+            <a href="https://ecai2025.org/">ECAI-2025</a>
+            <a href="https://ecai2025.hyperagents.org/">
+                HyperAgents Workshop call for papers/ Short paper
+            </a>
+        {/snippet}
+        {#snippet additionalLinks()}
+            <IconsSvg name="slideshow" height="30px"
+                      arialLabel="slides used at the workshop"
+                      href="https://idd-vision.slides.jitsedesmet.be/"
+                      --color-hover="var(--color-tertiary)"
+                      target="_blank"
+            />
+        {/snippet}
+    </LinkProjectBox>
+    <LinkProjectBox
             href="https://traqula-demo-semantics-2025.jitsedesmet.be/"
             title="Towards tackling SPARQL heterogeneity through modular parsing"
     >
