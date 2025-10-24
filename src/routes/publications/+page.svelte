@@ -32,6 +32,26 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
         {/snippet}
     </LinkProjectBox>
     <LinkProjectBox
+            href="https://interface-data-description-hyperagents-2025.jitsedesmet.be/"
+            title="A Semantic Framework for Evaluating Post-hoc Explanations in Link Prediction"
+    >
+        {#snippet info()}
+            In reply of
+            <a href="https://ecai2025.org/">ECAI-2025</a>
+            <a href="https://sites.google.com/unical.it/xai-krkgecai/home-page">
+                XAI-KRKG Workshop call for papers/ Short paper
+            </a>
+        {/snippet}
+        {#snippet additionalLinks()}
+            <IconsSvg name="slideshow" height="30px"
+                      arialLabel="slides used at the workshop"
+                      href="https://docs.google.com/presentation/d/e/2PACX-1vT1d3kEO0ymWCk-nemnkUO38CyIZCqD2ZNYSxieBBTY8yr2eyoAR2lkTnr_RsIvW14c6IUUWNhDet1O/pub?start=false&loop=false&delayms=3000"
+                      --color-hover="var(--color-tertiary)"
+                      target="_blank"
+            />
+        {/snippet}
+    </LinkProjectBox>
+    <LinkProjectBox
             href="https://traqula-demo-semantics-2025.jitsedesmet.be/"
             title="Towards tackling SPARQL heterogeneity through modular parsing"
     >
