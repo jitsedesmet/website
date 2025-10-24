@@ -32,7 +32,6 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
         {/snippet}
     </LinkProjectBox>
     <LinkProjectBox
-            href="https://interface-data-description-hyperagents-2025.jitsedesmet.be/"
             title="A Semantic Framework for Evaluating Post-hoc Explanations in Link Prediction"
     >
         {#snippet info()}
