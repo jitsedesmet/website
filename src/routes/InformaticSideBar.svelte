@@ -34,6 +34,10 @@
             <IconsSvg name="linkedIn"/>
             <a href="https://www.linkedin.com/in/jitse-de-smet-051031206/" target="_blank">LinkedIn</a>
         </li>
+        <li>
+            <IconsSvg name="orcid"/>
+            <a href="https://orcid.org/0009-0002-6513-5013" target="_blank">ORCID</a>
+        </li>
     </ul>
 </div>
 
