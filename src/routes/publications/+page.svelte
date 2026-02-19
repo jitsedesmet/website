@@ -12,6 +12,20 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
 
 <ProjectGrid>
     <LinkProjectBox
+            href="https://traqula-resource.jitsedesmet.be/"
+            title="Traqula: Providing a Foundation for The Evolving SPARQL Ecosystem Through Modular Query Parsing, Transformation, and Generation"
+    >
+        {#snippet info()}
+            In reply of
+            <a href="https://2026.eswc-conferences.org/">ESWC 2026</a>
+            <a href="https://2026.eswc-conferences.org/calls/papers-resource-track/">
+                Resources Track call for papers
+            </a>
+        {/snippet}
+        {#snippet additionalLinks()}
+        {/snippet}
+    </LinkProjectBox>
+    <LinkProjectBox
             href="https://interface-data-description-hyperagents-2025.jitsedesmet.be/"
             title="A Vision on Algebraic Flows for Declarative Resource Descriptions"
     >
