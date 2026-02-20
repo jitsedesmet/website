@@ -11,4 +11,3 @@ vite.config.ts.timestamp-*
 
 # Ignore since it is generated using npm run prepare
 static/smui.css
-docker-compose.yml
