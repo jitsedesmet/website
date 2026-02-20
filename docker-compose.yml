@@ -1,6 +1,7 @@
 services:
   web:
     restart: always
+    image: "ghcr.io/jitsedesmet/jitsedesmet.be:latest"
     build:
       context: .
       network: host
