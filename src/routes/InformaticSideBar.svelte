@@ -47,30 +47,38 @@
         grid-area: image;
         place-self: start;
         border-radius: 50%;
-        max-height: 144px;
+        max-height: 60px;
         @media (min-width: 500px /* screen-size-big */) {
             max-height: unset;
-            max-width: 75%;
+            max-width: 80%;
         }
     }
     .name {
         grid-area: name;
 
-        font-size: 1.5rem;
-        font-weight: bold;
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: -0.01em;
+        color: var(--color-primary);
     }
     .bibliography-short {
         grid-area: bibliography;
 
-        font-size: 0.75rem;
-        color: var(--color-primary);
+        font-size: 0.72rem;
+        color: var(--color-primary-light);
+        opacity: 0.75;
+        font-style: italic;
     }
     .info-list {
         grid-area: info-list;
+        margin-top: 4px;
     }
     li {
-        margin: 0.4rem 0;
+        margin: 0.45rem 0;
         white-space: nowrap;
+        display: flex;
+        align-items: center;
+        gap: 6px;
     }
 
     .info-window {
@@ -83,7 +91,7 @@
             "image info-list";
         @media (min-width: 500px /* screen-size-big */) {
             grid-template-columns: 1fr;
-            gap: 0.2rem;
+            gap: 0.3rem;
             grid-template-areas:
               "image"
               "name"
@@ -93,8 +101,13 @@
     }
     a {
         text-decoration: none;
+        font-size: 0.85rem;
+        color: var(--color-primary);
+        border-bottom: 1px solid transparent;
+        transition: border-color var(--transition-fast), color var(--transition-fast);
     }
     a:hover {
-        text-decoration: underline;
+        color: var(--color-tertiary);
+        border-bottom-color: var(--color-tertiary);
     }
 </style>
