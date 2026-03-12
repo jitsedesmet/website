@@ -48,17 +48,10 @@
         place-self: start;
         border-radius: 50%;
         max-height: 60px;
-        border: 2px solid var(--color-tertiary);
-        box-shadow: 0 0 0 4px rgba(255, 106, 61, 0.15);
-        transition: box-shadow var(--transition);
         @media (min-width: 500px /* screen-size-big */) {
             max-height: unset;
             max-width: 80%;
-            border-width: 3px;
         }
-    }
-    .personal-image:hover {
-        box-shadow: 0 0 0 7px rgba(255, 106, 61, 0.22);
     }
     .name {
         grid-area: name;
