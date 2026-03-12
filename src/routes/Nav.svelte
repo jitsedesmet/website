@@ -41,27 +41,24 @@
         display: block;
         position: absolute;
         bottom: -1px;
-        left: 50%;
-        right: 50%;
+        left: 0;
+        right: 0;
         height: 2px;
         background-color: var(--color-tertiary);
         border-radius: 2px;
-        transition: left var(--transition), right var(--transition);
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: transform var(--transition);
     }
     a:hover {
         color: white;
-    }
-    a:hover::after {
-        left: 0;
-        right: 0;
     }
     li.active > a {
         color: white;
         font-weight: 700;
     }
     li.active > a::after {
-        left: 0;
-        right: 0;
+        transform: scaleX(1);
     }
     @media (min-width: 500px /* screen-size-big */) {
         ul {

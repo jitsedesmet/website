@@ -1,6 +1,6 @@
 <div class="header-inner">
     <div class="brand">
-        <span class="brand-initials" aria-hidden="true">JDS</span>
+        <a class="brand-initials" href="/" aria-label="Go to home page">JDS</a>
         <div class="brand-text">
             <a href="/">Jitse De Smet</a>
             <span class="brand-tagline">Researcher · Computer Scientist</span>
@@ -35,9 +35,11 @@
         letter-spacing: 0.05em;
         transition: background var(--transition), border-color var(--transition);
     }
-    .header-inner:hover .brand-initials {
+    .header-inner:hover .brand-initials,
+    .brand-initials:hover {
         background: rgba(255, 106, 61, 0.25);
         border-color: var(--color-tertiary);
+        opacity: 1;
     }
     .brand-text {
         display: flex;
