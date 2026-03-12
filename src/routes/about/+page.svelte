@@ -120,12 +120,18 @@
 <style>
     h2 {
         color: var(--color-primary);
-        font-size: 1.1em;
-        font-weight: bold;
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin: 1.4rem 0 0.5rem;
+        padding-bottom: 4px;
+        border-bottom: 2px solid var(--color-secondary);
     }
     .timeline {
         display: grid;
-        column-gap: 10px;
+        column-gap: 12px;
+        row-gap: 0;
         grid-auto-flow: row;
         grid-template-columns: auto 1fr auto;
     }
@@ -134,19 +140,34 @@
     }
     .years {
         grid-row: auto / span 2;
+        font-size: 0.72rem;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        color: var(--color-tertiary);
+        white-space: nowrap;
+        padding-top: 2px;
+        font-variant-numeric: tabular-nums;
+        border-left: 2px solid var(--color-secondary);
+        padding-left: 10px;
     }
     .title {
-        font-size: 1em;
-        font-weight: bold;
+        font-size: 0.95em;
+        font-weight: 700;
+        padding-top: 4px;
     }
     .info {
-        font-size: 1em;
+        font-size: 0.9em;
         font-style: italic;
         color: var(--color-primary);
+        opacity: 0.75;
         margin: 0 0 1rem 0;
+        padding-bottom: 4px;
     }
     .institute {
         grid-row: auto / span 2;
         text-align: end;
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding-top: 4px;
     }
 </style>
