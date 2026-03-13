@@ -21,55 +21,42 @@
 <style>
     ul {
         max-width: 100%;
-        padding: 4px 0 0 0;
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
     }
     li {
         position: relative;
     }
     a {
         display: inline-block;
-        font-weight: 600;
-        font-size: 1rem;
+        font-family: var(--font-sans);
+        font-weight: 500;
+        font-size: 0.82rem;
         text-decoration: none;
-        color: rgba(255, 255, 255, 0.82);
-        padding-bottom: 3px;
+        color: rgba(255, 255, 255, 0.65);
+        padding: 10px 16px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
         position: relative;
-        transition: color var(--transition-fast);
-    }
-    a::after {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-        right: 0;
-        height: 2px;
-        background-color: var(--color-tertiary);
-        border-radius: 2px;
-        transform: scaleX(0);
-        transform-origin: center;
-        transition: transform var(--transition);
+        transition: color var(--transition-fast), background var(--transition-fast);
+        border-bottom: 2px solid transparent;
     }
     a:hover {
-        color: white;
+        color: rgba(255, 255, 255, 0.95);
+        background: rgba(255, 255, 255, 0.06);
+        border-bottom-color: rgba(224, 92, 42, 0.5);
     }
     li.active > a {
         color: white;
-        font-weight: 700;
-    }
-    li.active > a::after {
-        transform: scaleX(1);
+        border-bottom-color: var(--color-tertiary);
+        background: rgba(255, 255, 255, 0.08);
     }
     @media (min-width: 500px /* screen-size-big */) {
         ul {
-            display: grid;
-            gap: 0.5rem;
-            grid-template-columns: repeat(5, 1fr);
-            text-align: center;
-        }
-        li {
-            display: flex;
-            justify-content: center;
+            flex-direction: row;
         }
     }
 </style>

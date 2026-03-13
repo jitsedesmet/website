@@ -24,10 +24,10 @@ import IconsSvg from "$lib/IconsSvg.svelte";
         display: block;
         background: var(--color-bg-subtle);
         border: 1px solid var(--color-secondary);
-        padding: 20px 24px;
-        border-radius: var(--radius-lg);
-        margin: 10px 0;
-        border-left: 4px solid var(--color-secondary);
+        border-left: 3px solid var(--color-secondary);
+        padding: 16px 20px;
+        border-radius: var(--radius-md);
+        margin: 8px 0;
         transition: transform var(--transition), box-shadow var(--transition), border-left-color var(--transition);
         text-decoration: none;
     }
@@ -37,9 +37,10 @@ import IconsSvg from "$lib/IconsSvg.svelte";
         border-left-color: var(--color-tertiary);
     }
     h2 {
-        margin: 0 0 6px 0;
-        font-weight: 700;
-        font-size: 1.05rem;
+        font-family: var(--font-serif);
+        margin: 0 0 5px 0;
+        font-weight: 500;
+        font-size: 1.1rem;
         display: flex;
         align-items: center;
         gap: 6px;
@@ -47,8 +48,9 @@ import IconsSvg from "$lib/IconsSvg.svelte";
     }
     .published {
         font-style: italic;
-        font-size: 0.8rem;
-        opacity: 0.65;
+        font-family: var(--font-serif);
+        font-size: 0.85rem;
+        opacity: 0.6;
     }
     .published::before {
         content: 'Published: ';
