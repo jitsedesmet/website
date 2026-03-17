@@ -10,7 +10,7 @@
         Jitse De Smet
     </div>
     <div class="bibliography-short">
-        Fresh PhD student at Ghent University.
+        PhD Researcher at Ghent University
     </div>
     <!--Icons from -->
     <ul class="info-list">
@@ -47,38 +47,46 @@
         grid-area: image;
         place-self: start;
         border-radius: 50%;
-        max-height: 60px;
+        border: 2px solid var(--color-secondary);
+        max-height: 56px;
         @media (min-width: 500px /* screen-size-big */) {
             max-height: unset;
-            max-width: 80%;
+            max-width: 72%;
+            border-radius: 4px;
+            place-self: center;
+            border-width: 1px;
         }
     }
     .name {
         grid-area: name;
 
-        font-size: 1.25rem;
-        font-weight: 700;
-        letter-spacing: -0.01em;
+        font-family: var(--font-serif);
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 0;
         color: var(--color-primary);
     }
     .bibliography-short {
         grid-area: bibliography;
 
-        font-size: 0.72rem;
+        font-size: 0.7rem;
         color: var(--color-primary-light);
-        opacity: 0.75;
+        opacity: 0.8;
         font-style: italic;
+        font-family: var(--font-serif);
     }
     .info-list {
         grid-area: info-list;
-        margin-top: 4px;
+        margin-top: 6px;
+        padding-top: 8px;
+        border-top: 1px solid var(--color-secondary);
     }
     li {
-        margin: 0.45rem 0;
+        margin: 0.4rem 0;
         white-space: nowrap;
         display: flex;
         align-items: center;
-        gap: 6px;
+        gap: 7px;
     }
 
     .info-window {
@@ -91,7 +99,7 @@
             "image info-list";
         @media (min-width: 500px /* screen-size-big */) {
             grid-template-columns: 1fr;
-            gap: 0.3rem;
+            gap: 0.25rem;
             grid-template-areas:
               "image"
               "name"
@@ -101,7 +109,7 @@
     }
     a {
         text-decoration: none;
-        font-size: 0.85rem;
+        font-size: 0.82rem;
         color: var(--color-primary);
         border-bottom: 1px solid transparent;
         transition: border-color var(--transition-fast), color var(--transition-fast);
