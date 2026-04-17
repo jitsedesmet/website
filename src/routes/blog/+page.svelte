@@ -1,22 +1,22 @@
 <script>
 import IconsSvg from "$lib/IconsSvg.svelte";
+import { blogPosts } from "$lib/blog-posts.js";
+
+const sorted = [...blogPosts].sort((a, b) => b.date.localeCompare(a.date));
 </script>
 
 <svelte:head>
     <title>Blog | Jitse De Smet</title>
     <meta name="description" content="Blog of Jitse De Smet">
+    <link rel="alternate" type="application/rss+xml" title="Jitse De Smet" href="/blog/rss.xml">
 </svelte:head>
 
-
-<a href="https://knows.idlab.ugent.be/news/eswc2025-trip-report/" class="entry" target="_blank">
-    <h2>Jitse's trip report for ESWC 2025 <IconsSvg name="external"/></h2>
-    <span class="published">2025-06-20</span>
+{#each sorted as post}
+<a href={post.url} class="entry" target="_blank" rel="noopener noreferrer">
+    <h2>{post.title} <IconsSvg name="external"/></h2>
+    <span class="published">{post.date}</span>
 </a>
-
-<a href="https://knows.idlab.ugent.be/news/new-colleague-jitse-de-smet/" class="entry" target="_blank">
-    <h2>Jitse De Smet joins KNoWS <IconsSvg name="external"/></h2>
-    <span class="published">2024-10-17</span>
-</a>
+{/each}
 
 
 <style>
