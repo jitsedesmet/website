@@ -12,6 +12,70 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
 
 <ProjectGrid>
     <LinkProjectBox
+            href="https://2026-icwe-poster.jitsedesmet.be/"
+            title="Client-Driven Offline-First RDF 1.2 using OR-Sets"
+    >
+        {#snippet info()}
+            In reply of
+            <a href="https://icwe2026.webengineering.org/">ICWE 2026</a>
+            <a href="https://icwe2026.webengineering.org/index.php/poster-and-demo-track/">
+                Poster and Demo track call for papers
+            </a>
+        {/snippet}
+        {#snippet additionalLinks()}
+            <IconsSvg name="npm" height="30px"
+                      href="https://www.npmjs.com/package/orset-rdf-store"
+                      arialLabel="npm"
+                      target="_blank"
+                      --color-hover="var(--color-tertiary)"
+            />
+            <IconsSvg name="github" height="30px"
+                      arialLabel="Explore the source code of the ORset RDF store"
+                      href="https://github.com/jitsedesmet/add-wins-OR-set-RDF-datastore"
+                      target="_blank"
+                      --color-hover="var(--color-tertiary)"
+            />
+            <IconsSvg name="fileA0" height="30px"
+                      arialLabel="look at the poster for the ORset RDF Store"
+                      href="https://orset-rdf.poster.jitsedesmet.be/"
+                      target="_blank"
+                      --color-hover="var(--color-tertiary)"
+            />
+        {/snippet}
+    </LinkProjectBox>
+    <LinkProjectBox
+            href="https://2026-eswc-demo.jitsedesmet.be/"
+            title="Demonstration of Composable SPARQL Parsing and Query Execution with Traqula and Comunica"
+    >
+        {#snippet info()}
+            In reply of
+            <a href="https://2026.eswc-conferences.org/">ESWC 2026</a>
+            <a href="https://2026.eswc-conferences.org/calls/poster-demo/">
+                call for Poser and Demos
+            </a>
+        {/snippet}
+        {#snippet additionalLinks()}
+            <IconsSvg name="laptopCode" height="30px"
+                      href="https://compose-parser-engine.demo.jitsedesmet.be/"
+                      arialLabel="Try the demo live"
+                      target="_blank"
+                      --color-hover="var(--color-tertiary)"
+            />
+            <IconsSvg name="youtube" height="30px"
+                      arialLabel="look at the SGF demo on YouTube"
+                      href="https://youtu.be/7VFJGvxbRsI"
+                      target="_blank"
+                      --color-hover="var(--color-tertiary)"
+            />
+            <IconsSvg name="github" height="30px"
+                      arialLabel="Explore the source code of the demo"
+                      href="https://github.com/jitsedesmet/demo-mixed-composability"
+                      target="_blank"
+                      --color-hover="var(--color-tertiary)"
+            />
+        {/snippet}
+    </LinkProjectBox>
+    <LinkProjectBox
             href="https://traqula-resource.jitsedesmet.be/"
             title="Traqula: Providing a Foundation for The Evolving SPARQL Ecosystem Through Modular Query Parsing, Transformation, and Generation"
     >
@@ -23,6 +87,18 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
             </a>
         {/snippet}
         {#snippet additionalLinks()}
+            <IconsSvg name="npm" height="30px"
+                      href="https://www.npmjs.com/package/@traqula/parser-sparql-1-2"
+                      arialLabel="npm"
+                      target="_blank"
+                      --color-hover="var(--color-tertiary)"
+            />
+            <IconsSvg name="github" height="30px"
+                      arialLabel="Explore the source code of Traqula"
+                      href="https://github.com/comunica/traqula"
+                      target="_blank"
+                      --color-hover="var(--color-tertiary)"
+            />
         {/snippet}
     </LinkProjectBox>
     <LinkProjectBox
