@@ -5,7 +5,7 @@
       "dockerfile": "Dockerfile"
   },
   "mounts": [
-    "source=.devcontainer/config.json,target=/home/node/.copilot/config.json,type=bind",
+    "source=/home/jitsedesmet/Documents/werken/personal-website/.devcontainer/config.json,target=/home/node/.copilot/config.json,type=bind",
   ],
   "forwardPorts": [5173],
   "remoteUser": "node",
