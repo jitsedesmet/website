@@ -35,21 +35,20 @@
         justify-content: center;
 
         color: white;
-        background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
-        border-bottom: 3px solid rgba(255, 106, 61, 0.5);
+        background: linear-gradient(160deg, #1e2d4a 0%, var(--color-primary) 100%);
+        border-bottom: 2px solid rgba(224, 92, 42, 0.35);
     }
     nav {
         grid-area: nav;
-        border-radius: 0 0 10px 10px;
-        padding: 8px 16px 12px;
-        background: linear-gradient(180deg, var(--color-primary-light) 0%, var(--color-primary) 100%);
-        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        padding: 0 16px;
+        background: #16213a;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
     }
     aside {
         grid-area: sidebar;
 
-        padding: 16px 14px 20px;
-        color: var(--color-opposite-text);
+        padding: 20px 16px 24px;
+        color: var(--color-text);
         background-color: var(--color-bg-subtle);
         @media (min-width: 500px /* screen-size-big */) {
             border-right: 1px solid var(--color-secondary);
@@ -58,13 +57,13 @@
     .main {
         grid-area: main;
         background-color: var(--color-bg);
-        padding: 20px;
+        padding: 24px 28px;
         min-width: 0;
     }
     footer {
         grid-area: footer;
-        padding: 16px 20px;
-        background-color: var(--color-bg);
+        padding: 14px 24px;
+        background-color: var(--color-bg-subtle);
         border-top: 1px solid var(--color-secondary);
     }
     .layout {
@@ -81,7 +80,7 @@
             "footer";
         box-shadow: var(--shadow-lg);
         @media (min-width: 500px /* screen-size-big */) {
-            grid-template-columns: 220px 1fr;
+            grid-template-columns: 210px 1fr;
             grid-template-rows: auto auto 1fr auto;
             grid-template-areas:
               "header  header"

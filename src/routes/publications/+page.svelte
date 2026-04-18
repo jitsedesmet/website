@@ -122,6 +122,7 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
         {/snippet}
     </LinkProjectBox>
     <LinkProjectBox
+            href="https://ceur-ws.org/Vol-4172/paper10.pdf"
             title="A Semantic Framework for Evaluating Post-hoc Explanations in Link Prediction"
     >
         {#snippet info()}
