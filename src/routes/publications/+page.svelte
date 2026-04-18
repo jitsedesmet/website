@@ -44,6 +44,31 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
         {/snippet}
     </LinkProjectBox>
     <LinkProjectBox
+            href="https://rubensworks.github.io/article-eswc2026-demo-comunica-mcp/"
+            title="Comunica MCP SPARQL: Improving the Accuracy of AI Agents using SPARQL-based Access to Decentralized Knowledge Graphs"
+    >
+        {#snippet info()}
+            In reply of
+            <a href="https://2026.eswc-conferences.org/">ESWC 2026</a>
+            <a href="https://2026.eswc-conferences.org/calls/poster-demo/">
+                call for Poser and Demos
+            </a>
+        {/snippet}
+        {#snippet additionalLinks()}
+            <IconsSvg name="npm" height="30px"
+                      arialLabel="npm"
+                      target="_blank"
+                      --color-hover="var(--color-tertiary)"
+            />
+            <IconsSvg name="github" height="30px"
+                      arialLabel="Explore the source code of Comunica MCP"
+                      href="https://github.com/comunica/comunica-feature-mcp"
+                      target="_blank"
+                      --color-hover="var(--color-tertiary)"
+            />
+        {/snippet}
+    </LinkProjectBox>
+    <LinkProjectBox
             href="https://2026-eswc-demo.jitsedesmet.be/"
             title="Demonstration of Composable SPARQL Parsing and Query Execution with Traqula and Comunica"
     >
