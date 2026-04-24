@@ -5,8 +5,8 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
 </script>
 
 <svelte:head>
-    <title>Presentations | Jitse De Smet</title>
-    <meta name="description" content="Presentations of Jitse De Smet">
+    <title>Publications | Jitse De Smet</title>
+    <meta name="description" content="Publications of Jitse De Smet">
 </svelte:head>
 
 

@@ -86,3 +86,171 @@ This improvement simplifies client-side data management while maintaining flexib
           vivo:rank 1 ;
       ] ;
     schema:datePublished "2025-06-01"^^xsd:date .
+
+
+<https://traqula-demo-semantics-2025.jitsedesmet.be/>
+    a schema:ScholarlyArticle, schema:CreativeWork ;
+    schema:creator :me ; foaf:maker :me ; schema:author :me ;
+    schema:name "Towards tackling SPARQL heterogeneity through modular parsing"@en ;
+    schema:abstract """The SPARQL ecosystem has become increasingly fragmented as engines introduce valuable but incompatible language extensions.
+      This growing diversity undermines query portability, tooling reliability, and the pace of innovation.
+      To address this, we designed a modular parser architecture that supports dynamic extension and modular grammar definitions.
+      This paper presents a builder-based, TypeScript-native parser framework inspired by Chevrotain and the modular principles of Comunica.
+      Our prototype demonstrates that key SPARQL extensions can be integrated, altered, or removed with minimal effort and strong type safety.
+      These results suggest that modular, declarative parsing is not only feasible but essential for keeping pace with evolving SPARQL standards.
+      Looking forward, we identify the need for round-trippable ASTs, Babel-inspired generators, and transformer pipelines to enable a complete, future-proof SPARQL toolchain."""@en ;
+    schema:contributor knows: ;
+    schema:about dbp:Semantic_Web ;
+    bibframe:contribution [
+          a bibframe:Contribution ;
+          bibframe:agent :me ;
+          vivo:rank 0 ;
+      ], [
+          a bibframe:Contribution ;
+          bibframe:agent <https://www.rubensworks.net/#me> ;
+          vivo:rank 1 ;
+      ] ;
+    schema:datePublished "2025-10-10"^^xsd:date .
+
+
+<https://interface-data-description-hyperagents-2025.jitsedesmet.be/>
+    a schema:ScholarlyArticle, schema:CreativeWork ;
+    schema:creator :me ; foaf:maker :me ; schema:author :me ;
+    schema:name "A Vision on Algebraic Flows for Declarative Resource Descriptions"@en ;
+    schema:abstract """In the age of agentic systems, correct autonomous data management is increasingly critical.
+      Agents need to discover what resources exist and how to interact with them,
+      but existing interface description frameworks that could provide such support either leave too much open to interpretation or fail to model underlying resources,
+      which are not directly exposed.
+      To address this gap,
+      we propose a declarative description that describes underlying resources and their transformations by modeling interfaces as algebraic flows that declaratively define how underlying resources are exposed,
+      derived, and manipulated.
+      We detail our vision by walking through an example use case that showcases the various problems agents have when interacting with data interfaces and incrementally present our solution of modeling how data flows within the system.
+      Our approach shows that interface developers can express their systems using familiar query languages,
+      while enabling autonomous agents to reason about the consequences of actions and determine required operations to manipulate resources safely and predictably.
+      This makes deterministic interactions with complex, asymmetric information interfaces possible.
+      Looking ahead, we aim to formalize this approach into a theoretically sound framework with a proof-of-concept implementation.
+      Additionally, we identify promising avenues for integrating policy-aware semantics and privacy-preserving interface disclosure."""@en ;
+    schema:contributor knows: ;
+    schema:about dbp:Semantic_Web ;
+    bibframe:contribution [
+          a bibframe:Contribution ;
+          bibframe:agent :me ;
+          vivo:rank 0 ;
+      ], [
+          a bibframe:Contribution ;
+          bibframe:agent <https://www.rubensworks.net/#me> ;
+          vivo:rank 1 ;
+      ], [
+          a bibframe:Contribution ;
+          bibframe:agent <https://www.rubensworks.net/#me> ;
+          vivo:rank 2 ;
+      ] ;
+    schema:datePublished "2025-10-25"^^xsd:date .
+
+<https://traqula-resource.jitsedesmet.be/>
+    a schema:ScholarlyArticle, schema:CreativeWork ;
+    schema:creator :me ; foaf:maker :me ; schema:author :me ;
+    schema:name "Traqula: Providing a Foundation for The Evolving SPARQL Ecosystem Through Modular Query Parsing, Transformation, and Generation"@en ;
+    schema:abstract """SPARQL engines continue to diverge in the versions and language extensions they support.
+      With SPARQL 1.2 nearing completion and the working group’s plans toward future maintenance, this divergence is likely to grow.
+      As a result, language tools that aim to support multiple SPARQL versions and dialects face increasing maintenance costs.
+      Furthermore, areas such as SPARQL federation become harder to manage.
+      To address these challenges, we introduce Traqula, a modular TypeScript-based framework for parsing, transforming, and generating SPARQL queries.
+      This article presents Traqula’s architecture and its builder-based dependency-injection design,
+      and we show how these components provide modular support for SPARQL 1.1 and 1.2 parsing and generation.
+      Traqula enables round-tripping, supports generic algebraic and AST transformations,
+      and delivers significantly faster parsing compared to current JavaScript-based SPARQL parsing.
+      Traqula’s modular architecture enables flexible experimentation for researchers,
+      and it is production-ready thanks to extensive testing and modern development techniques.
+      Looking forward, Traqula lays the groundwork for supporting additional query languages, developing generic rewriting modules for SPARQL federation engines,
+      and building robust tooling for an increasingly diverse SPARQL ecosystem."""@en ;
+    schema:contributor knows: ;
+    schema:about dbp:Semantic_Web ;
+    bibframe:contribution [
+          a bibframe:Contribution ;
+          bibframe:agent :me ;
+          vivo:rank 0 ;
+      ], [
+          a bibframe:Contribution ;
+          bibframe:agent <https://www.rubensworks.net/#me> ;
+          vivo:rank 1 ;
+      ] ;
+    schema:datePublished "2026-05-10"^^xsd:date .
+
+<https://2026-eswc-demo.jitsedesmet.be/>
+    a schema:ScholarlyArticle, schema:CreativeWork ;
+    schema:creator :me ; foaf:maker :me ; schema:author :me ;
+    schema:name "Demonstration of Composable SPARQL Parsing and Query Execution with Traqula and Comunica"@en ;
+    schema:abstract """Linked Data and SPARQL are becoming increasingly diverse, with engines supporting different dialects and extensions.
+      With SPARQL 1.2 nearing completion and its planned maintenance mode, this diversity is expected to grow.
+      There is a growing need for language tools that can handle multiple versions and dialects in a unified way.
+      In response, we introduced Traqula, a modular framework for parsing, generating, and transforming queries,
+      allowing components to be created and adapted incrementally.
+      This paper showcases a web client that brings together Traqula and the modular Comunica query engine,
+      enabling users to experiment with queries across multiple parser and engine variants while interactively visualizing their configuration,
+      illustrating the power of modularity for both language tools and query engines."""@en ;
+    schema:contributor knows: ;
+    schema:about dbp:Semantic_Web ;
+    bibframe:contribution [
+          a bibframe:Contribution ;
+          bibframe:agent :me ;
+          vivo:rank 0 ;
+      ], [
+          a bibframe:Contribution ;
+          bibframe:agent <https://www.rubensworks.net/#me> ;
+          vivo:rank 1 ;
+      ] ;
+    schema:datePublished "2026-05-10"^^xsd:date .
+
+<https://rubensworks.github.io/article-eswc2026-demo-comunica-mcp/>
+    a schema:ScholarlyArticle, schema:CreativeWork ;
+    schema:creator :me ; foaf:maker :me ; schema:author :me ;
+    schema:name "Comunica MCP SPARQL: Improving the Accuracy of AI Agents using SPARQL-based Access to Decentralized Knowledge Graphs"@en ;
+    schema:abstract """Despite the growing popularity of AI agents based on Large Language Models (LLMs),
+    they often hallucinate parts of their answers, which limits their trustworthiness.
+    Techniques such as GraphRAG have already been introduced to improve the overall accuracy of LLMs by combining them with Knowledge Graphs.
+    In contrast to GraphRAG, the recently introduced Model Context Protocol (MCP) allows LLMs to be connected to external systems without prior training.
+    Since we do not have a good understanding yet of how MCP can help connecting LLMs to Knowledge Graphs,
+    there is a need for flexible software that offers Knowledge Graphs through an MCP interface.
+    The goal of this demonstration is to introduce the Comunica MCP SPARQL servers,
+    which exposes all public or private Knowledge Graphs through a SPARQL-based MCP interface.
+    Our preliminary findings show that modern LLMs can effectively query over well known Knowledge Graphs such as DBpedia and Wikidata,
+    but can struggle when querying other Knowledge Graphs, or try to write federated queries.
+    In conclusion, Comunica MCP SPARQL is a tool that offers a path towards trustworthy and explainable agentic AI,
+    and enables future research towards neuro-symbolic AI by integrating LLMs and Knowledge Graphs."""@en ;
+    schema:contributor knows: ;
+    schema:about dbp:Semantic_Web ;
+    bibframe:contribution [
+          a bibframe:Contribution ;
+          bibframe:agent <https://www.rubensworks.net/#me> ;
+          vivo:rank 0 ;
+      ], [
+          a bibframe:Contribution ;
+          bibframe:agent :me ;
+          vivo:rank 1 ;
+      ] ;
+    schema:datePublished "2026-05-10"^^xsd:date .
+
+<https://2026-icwe-poster.jitsedesmet.be/>
+    a schema:ScholarlyArticle, schema:CreativeWork ;
+    schema:creator :me ; foaf:maker :me ; schema:author :me ;
+    schema:name "Client-Driven Offline-First RDF 1.2 using OR-Sets"@en ;
+    schema:abstract """As autonomous agents increasingly write to shared RDF knowledge graphs concurrently,
+      especially in the context of decentralized data ecosystems, principled conflict resolution becomes critical.
+      Existing RDF CRDT approaches either require dedicated infrastructure or introduce consistency boundary problems when storing bookkeeping across multiple resources.
+      We instantiate the state-based OR-Set over RDF 1.2 triple terms — unlike prior work,
+      retaining all bookkeeping within a single dataset without additional infrastructure — and demonstrate a proof-of-concept datastore wrapper to use in query engines,
+      enabling agents to query and update a conflict-free knowledge graph via standard SPARQL, unaware of the underlying merge machinery.
+      Future work will investigate constraint-aware merge semantics for RDF CRDTs."""@en ;
+    schema:contributor knows: ;
+    schema:about dbp:Semantic_Web ;
+    bibframe:contribution [
+          a bibframe:Contribution ;
+          bibframe:agent :me ;
+          vivo:rank 0 ;
+      ], [
+          a bibframe:Contribution ;
+          bibframe:agent <https://www.rubensworks.net/#me> ;
+          vivo:rank 1 ;
+      ] ;
+    schema:datePublished "2026-06-09"^^xsd:date .
