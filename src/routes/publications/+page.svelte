@@ -66,6 +66,12 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
                       target="_blank"
                       --color-hover="var(--color-tertiary)"
             />
+            <IconsSvg name="fileA0" height="30px"
+                      arialLabel="look at the poster for the Comunica MCP demo"
+                      href="https://rubensworks.github.io/poster-eswc2026-demo-comunica-mcp/"
+                      target="_blank"
+                      --color-hover="var(--color-tertiary)"
+            />
         {/snippet}
     </LinkProjectBox>
     <LinkProjectBox
@@ -95,6 +101,12 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
             <IconsSvg name="github" height="30px"
                       arialLabel="Explore the source code of the demo"
                       href="https://github.com/jitsedesmet/demo-mixed-composability"
+                      target="_blank"
+                      --color-hover="var(--color-tertiary)"
+            />
+            <IconsSvg name="fileA0" height="30px"
+                      arialLabel="look at the poster for the Traqula and Comunica Composability Demo"
+                      href="https://compose-parser-engine.poster.jitsedesmet.be/"
                       target="_blank"
                       --color-hover="var(--color-tertiary)"
             />
