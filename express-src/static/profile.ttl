@@ -202,7 +202,7 @@ This improvement simplifies client-side data management while maintaining flexib
       ] ;
     schema:datePublished "2026-05-10"^^xsd:date .
 
-<https://rubensworks.github.io/article-eswc2026-demo-comunica-mcp/>
+<https://www.rubensworks.net/publications/taelman_demo_comunicamcp_2026/#publication>
     a schema:ScholarlyArticle, schema:CreativeWork ;
     schema:creator :me ; foaf:maker :me ; schema:author :me ;
     schema:name "Comunica MCP SPARQL: Improving the Accuracy of AI Agents using SPARQL-based Access to Decentralized Knowledge Graphs"@en ;
