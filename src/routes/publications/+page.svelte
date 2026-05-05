@@ -136,6 +136,12 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
                       target="_blank"
                       --color-hover="var(--color-tertiary)"
             />
+            <IconsSvg name="slideshow" height="30px"
+                      arialLabel="slides used at the conference"
+                      href="https://traqula-resource.slides.jitsedesmet.be/"
+                      --color-hover="var(--color-tertiary)"
+                      target="_blank"
+            />
         {/snippet}
     </LinkProjectBox>
     <LinkProjectBox
