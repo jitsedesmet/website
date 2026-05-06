@@ -34,23 +34,24 @@
     .project {
         background: var(--color-bg-subtle);
         border: 1px solid var(--color-secondary);
-        padding: 20px;
-        border-radius: var(--radius-lg);
+        padding: 18px;
+        border-radius: var(--radius-md);
         display: flex;
         flex-direction: column;
         text-decoration: none;
         transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
     }
     .project:hover {
-        transform: translateY(-3px);
+        transform: translateY(-2px);
         box-shadow: var(--shadow-md);
-        border-color: var(--color-primary);
+        border-color: var(--color-primary-light);
     }
     .title{
         justify-self: center;
         text-align: center;
-        font-size: 1.15em;
-        font-weight: 700;
+        font-family: var(--font-serif);
+        font-size: 1.05rem;
+        font-weight: 500;
         color: var(--color-primary);
         margin: 8px 0;
         line-height: 1.4;
@@ -59,10 +60,11 @@
         color: var(--color-primary);
         opacity: 0.8;
         font-style: italic;
+        font-family: var(--font-serif);
         text-justify: auto;
         text-align: justify;
-        font-size: 0.9em;
-        line-height: 1.5;
+        font-size: 0.92rem;
+        line-height: 1.6;
     }
     .additional-links {
         margin-top: auto;
@@ -70,7 +72,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         column-gap: 10px;
-        padding-top: 14px;
+        padding-top: 12px;
         border-top: 1px solid var(--color-secondary);
         margin-top: 12px;
     }

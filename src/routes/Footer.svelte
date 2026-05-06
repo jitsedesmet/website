@@ -24,7 +24,7 @@
 
 <style>
     .footer {
-        font-size: 0.8rem;
+        font-size: 0.78rem;
         display: flex;
         flex-direction: column;
         gap: 8px;
@@ -37,37 +37,39 @@
     .follow {
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: 10px;
         flex-wrap: wrap;
     }
     .follow > span {
-        font-weight: 700;
-        font-size: 0.7rem;
-        letter-spacing: 0.08em;
+        font-weight: 600;
+        font-size: 0.65rem;
+        letter-spacing: 0.1em;
         text-transform: uppercase;
         color: var(--color-primary);
-        opacity: 0.5;
+        opacity: 0.45;
     }
     .follow > a {
         display: inline-flex;
         align-items: center;
         gap: 5px;
-        font-weight: 600;
+        font-weight: 500;
         color: var(--color-primary);
         text-decoration: none;
-        padding: 4px 10px;
+        padding: 3px 10px;
         border: 1px solid var(--color-secondary);
         border-radius: var(--radius-sm);
+        background: var(--color-bg);
         transition: background var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
     }
     .follow > a:hover {
-        background: var(--color-secondary);
-        border-color: var(--color-primary);
+        border-color: var(--color-tertiary);
+        color: var(--color-tertiary);
     }
     .licence {
         color: var(--color-primary);
-        opacity: 0.65;
+        opacity: 0.55;
         line-height: 1.5;
+        font-style: italic;
     }
     a:hover {
         text-decoration: underline;

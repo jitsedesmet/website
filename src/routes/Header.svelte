@@ -3,7 +3,7 @@
         <a class="brand-initials" href="/" aria-label="Go to home page">JDS</a>
         <div class="brand-text">
             <a href="/">Jitse De Smet</a>
-            <span class="brand-tagline">Researcher · Computer Scientist</span>
+            <span class="brand-tagline">PhD Researcher · Computer Scientist · Ghent University</span>
         </div>
     </div>
 </div>
@@ -11,57 +11,66 @@
 <style>
     .header-inner {
         margin: auto;
-        padding: 14px 20px;
+        padding: 16px 24px;
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
     .brand {
         display: flex;
         align-items: center;
-        gap: 14px;
+        gap: 16px;
     }
     .brand-initials {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 46px;
-        height: 46px;
-        min-width: 46px;
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.12);
-        border: 2px solid rgba(255, 255, 255, 0.35);
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        border-radius: 3px;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.28);
         color: white;
-        font-weight: 700;
-        font-size: 0.85rem;
-        letter-spacing: 0.05em;
+        font-family: var(--font-serif);
+        font-weight: 500;
+        font-style: italic;
+        font-size: 1.1rem;
+        letter-spacing: 0.04em;
         transition: background var(--transition), border-color var(--transition);
+        text-decoration: none;
     }
     .header-inner:hover .brand-initials,
     .brand-initials:hover {
-        background: rgba(255, 106, 61, 0.25);
-        border-color: var(--color-tertiary);
+        background: rgba(224, 92, 42, 0.2);
+        border-color: rgba(224, 92, 42, 0.6);
         opacity: 1;
     }
     .brand-text {
         display: flex;
         flex-direction: column;
-        gap: 2px;
+        gap: 3px;
     }
     a {
-        font-weight: 700;
-        font-size: 1.4rem;
+        font-family: var(--font-serif);
+        font-weight: 600;
+        font-style: normal;
+        font-size: 1.5rem;
         color: white;
         text-decoration: none;
-        letter-spacing: -0.01em;
+        letter-spacing: 0;
         transition: opacity var(--transition-fast);
     }
     a:hover {
         opacity: 0.85;
     }
     .brand-tagline {
-        color: rgba(255, 255, 255, 0.6);
-        font-size: 0.7rem;
+        color: rgba(255, 255, 255, 0.55);
+        font-family: var(--font-sans);
+        font-size: 0.65rem;
         font-weight: 400;
-        letter-spacing: 0.08em;
+        letter-spacing: 0.09em;
         text-transform: uppercase;
     }
 </style>

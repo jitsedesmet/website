@@ -119,14 +119,15 @@
 
 <style>
     h2 {
+        font-family: var(--font-serif);
         color: var(--color-primary);
-        font-size: 1rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        margin: 1.4rem 0 0.5rem;
-        padding-bottom: 4px;
-        border-bottom: 2px solid var(--color-secondary);
+        font-size: 1.1rem;
+        font-weight: 600;
+        font-style: normal;
+        letter-spacing: 0.02em;
+        margin: 1.6rem 0 0.6rem;
+        padding-bottom: 5px;
+        border-bottom: 1px solid var(--color-secondary);
     }
     .timeline {
         display: grid;
@@ -140,9 +141,9 @@
     }
     .years {
         grid-row: auto / span 2;
-        font-size: 0.72rem;
-        font-weight: 600;
-        letter-spacing: 0.04em;
+        font-size: 0.7rem;
+        font-weight: 500;
+        letter-spacing: 0.02em;
         color: var(--color-tertiary);
         white-space: nowrap;
         padding-top: 2px;
@@ -152,11 +153,12 @@
     }
     .title {
         font-size: 0.95em;
-        font-weight: 700;
+        font-weight: 600;
         padding-top: 4px;
     }
     .info {
-        font-size: 0.9em;
+        font-family: var(--font-serif);
+        font-size: 0.95em;
         font-style: italic;
         color: var(--color-primary);
         opacity: 0.75;
@@ -166,7 +168,7 @@
     .institute {
         grid-row: auto / span 2;
         text-align: end;
-        font-size: 0.8rem;
+        font-size: 0.78rem;
         font-weight: 500;
         padding-top: 4px;
     }
