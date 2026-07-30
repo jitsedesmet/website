@@ -1,3 +1,7 @@
+<script>
+    import { resolve } from '$app/paths';
+</script>
+
 <svelte:head>
     <title>About Me | Jitse De Smet</title>
     <meta name="description" content="Personal info of Jitse De Smet">
@@ -5,8 +9,8 @@
 
 <p>
     Hi inter web browser,<br>
-    My name is <a href="/">Jitse De Smet</a>.
-    I am a <a href="publications">PhD student</a> at <a href="http://www.ugent.be/ea/idlab/en">IDLab</a> with the
+    My name is <a href={resolve('/')}>Jitse De Smet</a>.
+    I am a <a href={resolve('/publications')}>PhD student</a> at <a href="http://www.ugent.be/ea/idlab/en">IDLab</a> with the
     <a href="https://knows.idlab.ugent.be/">KNoWS</a> research group.
     My research focuses on writing abstractions for decentralized data ecosystems.
 </p>

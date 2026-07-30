@@ -1,5 +1,6 @@
 <script lang="ts">
     import { page } from '$app/state';
+    import { resolve } from '$app/paths';
 
     const navLinks = [
         { href: '/about', label: 'About Me' },
@@ -7,13 +8,13 @@
         { href: '/projects', label: 'Projects' },
         { href: '/publications', label: 'Publications' },
         { href: '/presentations', label: 'Presentations' },
-    ];
+    ] as const;
 </script>
 
 <ul>
-    {#each navLinks as link}
+    {#each navLinks as link (link.href)}
         <li class:active={page.url.pathname === link.href || page.url.pathname.startsWith(link.href + '/')}>
-            <a href={link.href}>{link.label}</a>
+            <a href={resolve(link.href)}>{link.label}</a>
         </li>
     {/each}
 </ul>

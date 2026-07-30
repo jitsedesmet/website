@@ -11,7 +11,8 @@ const sorted = [...blogPosts].sort((a, b) => b.date.localeCompare(a.date));
     <link rel="alternate" type="application/rss+xml" title="Jitse De Smet" href="/blog/rss.xml">
 </svelte:head>
 
-{#each sorted as post}
+{#each sorted as post (post.url)}
+<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- `post.url` is always an external URL, never an internal route -->
 <a href={post.url} class="entry" target="_blank" rel="noopener noreferrer">
     <h2>{post.title} <IconsSvg name="external"/></h2>
     <span class="published">{post.date}</span>

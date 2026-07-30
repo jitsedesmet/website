@@ -1,8 +1,12 @@
+<script>
+    import { resolve } from '$app/paths';
+</script>
+
 <div class="header-inner">
     <div class="brand">
-        <a class="brand-initials" href="/" aria-label="Go to home page">JDS</a>
+        <a class="brand-initials" href={resolve('/')} aria-label="Go to home page">JDS</a>
         <div class="brand-text">
-            <a href="/">Jitse De Smet</a>
+            <a href={resolve('/')}>Jitse De Smet</a>
             <span class="brand-tagline">Researcher · Computer Scientist</span>
         </div>
     </div>

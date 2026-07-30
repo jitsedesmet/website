@@ -12,6 +12,7 @@
     let { additionalLinks, info, img, href, title = '' }: Props = $props();
 </script>
 
+<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- `href` is always an external URL passed by callers, never an internal route -->
 <a class="project" {href} target="_blank">
     {@render img?.()}
 

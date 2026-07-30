@@ -189,9 +189,11 @@
             {height}
             viewBox="0 0 {displayIcon.box[0]} {displayIcon.box[1]}"
             {...rest}>
+        <!-- eslint-disable-next-line svelte/no-at-html-tags -- `icons` above is a hardcoded, author-controlled map, never user input -->
         {@html displayIcon.svg}
     </svg>
 {:else}
+    <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -- `href` is always an external URL passed by callers, never an internal route -->
     <a {href} class="no-fancy" {...rest}>
         <svg
                 class={klass}
@@ -200,6 +202,7 @@
                 {height}
                 aria-label={arialLabel}
                 viewBox="0 0 {displayIcon.box[0]} {displayIcon.box[1]}">
+            <!-- eslint-disable-next-line svelte/no-at-html-tags -- `icons` above is a hardcoded, author-controlled map, never user input -->
             {@html displayIcon.svg}
         </svg>
     </a>

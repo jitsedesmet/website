@@ -1,5 +1,6 @@
 <script>
     import IconsSvg from "$lib/IconsSvg.svelte";
+    import { resolve } from '$app/paths';
 </script>
 
 <div class="footer">
@@ -9,7 +10,7 @@
             <IconsSvg name="github" height="0.8rem"/>
             GitHub
         </a>
-        <a href="/blog/rss.xml">
+        <a href={resolve('/blog/rss.xml')}>
             <IconsSvg name="rss" height="0.8rem" class="rss" --color="#fa9b39"/>
             RSS Feed
         </a>
