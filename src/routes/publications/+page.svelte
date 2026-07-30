@@ -12,6 +12,38 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
 
 <ProjectGrid>
     <LinkProjectBox
+            href="https://2026-semantics-rewriting.jitsedesmet.be/"
+            title="Demonstration of RDF and SPARQL 1.2 Interoperability through Query Rewriting"
+    >
+        {#snippet info()}
+            In reply of
+            <a href="https://2026-eu.semantics.cc/">SEMANTiCS 2026</a>
+            <a href="https://2026-eu.semantics.cc/page/cfp_posters_demos.html">
+                Call for Posters and Demos
+            </a>
+        {/snippet}
+        {#snippet additionalLinks()}
+            <IconsSvg name="laptopCode" height="30px"
+                      href="https://2026-query-rewriting.demo.jitsedesmet.be"
+                      arialLabel="Try the demo live"
+                      target="_blank"
+                      --color-hover="var(--color-tertiary)"
+            />
+            <IconsSvg name="youtube" height="30px"
+                      arialLabel="look at the interoperability demo on YouTube"
+                      href="https://youtu.be/x61_L3yFUlM"
+                      target="_blank"
+                      --color-hover="var(--color-tertiary)"
+            />
+            <IconsSvg name="github" height="30px"
+                      arialLabel="Explore the source code of the demo"
+                      href="https://github.com/jitsedesmet/2026-demo-construct-query-rewrite"
+                      target="_blank"
+                      --color-hover="var(--color-tertiary)"
+            />
+        {/snippet}
+    </LinkProjectBox>
+    <LinkProjectBox
             href="https://2026-icwe-poster.jitsedesmet.be/"
             title="Client-Driven Offline-First RDF 1.2 using OR-Sets"
     >
@@ -93,7 +125,7 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
                       --color-hover="var(--color-tertiary)"
             />
             <IconsSvg name="youtube" height="30px"
-                      arialLabel="look at the SGF demo on YouTube"
+                      arialLabel="look at the composability demo on YouTube"
                       href="https://youtu.be/7VFJGvxbRsI"
                       target="_blank"
                       --color-hover="var(--color-tertiary)"
@@ -227,7 +259,7 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
                       target="_blank"
             />
             <IconsSvg name="fileA0" height="30px"
-                      arialLabel="look at the poster for the SGF demo"
+                      arialLabel="look at the poster for the PhD symposium"
                       href="/posters/2025-phd-symp.pdf"
                       target="_blank"
                       --color-hover="var(--color-tertiary)"
