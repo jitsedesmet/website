@@ -11,6 +11,27 @@
 
 <ProjectGrid>
     <LinkProjectBox
+            href="https://comunica.github.io/traqula/"
+            title="Traqula"
+    >
+        {#snippet img()}
+            <img  alt="Traqula logo" src="https://raw.githubusercontent.com/comunica/traqula/main/assets/favicon.png">
+        {/snippet}
+        {#snippet info()}
+            Traqula is a highly flexible TypeScript framework for parsing, transforming, and generating
+            structured languages, with an initial focus on the SPARQL query language.
+            It ships pre-built engines for SPARQL 1.1 and 1.2, and lets you customise parsers, transformers,
+            and generators through a builder pattern.
+        {/snippet}
+        {#snippet additionalLinks()}
+            <IconsSvg name="github" height="30px"
+                      href="https://github.com/comunica/traqula"
+                      arialLabel="Explore the source code of Traqula"
+                      --color-hover="var(--color-tertiary)"
+            />
+        {/snippet}
+    </LinkProjectBox>
+    <LinkProjectBox
             href="https://mush-id.jitsedesmet.be"
             title="Mush-ID"
     >
