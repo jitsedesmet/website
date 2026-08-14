@@ -15,7 +15,7 @@
             title="Traqula"
     >
         {#snippet img()}
-            <img  alt="Traqula logo" src="https://raw.githubusercontent.com/comunica/traqula/main/assets/favicon.png">
+            <img  alt="Traqula logo" src="/traqula-logo.svg">
         {/snippet}
         {#snippet info()}
             Traqula is a highly flexible TypeScript framework for parsing, transforming, and generating
