@@ -41,6 +41,12 @@ import ProjectGrid from "$lib/ProjectGrid.svelte";
                       target="_blank"
                       --color-hover="var(--color-tertiary)"
             />
+            <IconsSvg name="fileA0" height="30px"
+                                  arialLabel="look at the poster for the demonstration"
+                                  href="http://2026-semantics.poster.jitsedesmet.be/"
+                                  target="_blank"
+                                  --color-hover="var(--color-tertiary)"
+                        />
         {/snippet}
     </LinkProjectBox>
     <LinkProjectBox
