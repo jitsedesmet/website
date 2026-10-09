@@ -11,6 +11,29 @@
 
 <ProjectGrid>
     <LinkProjectBox
+            href="https://github.com/jitsedesmet/sparql-view-unfold"
+            title="SPARQL View Unfold"
+    >
+        {#snippet info()}
+            SPARQL View Unfold answers SPARQL 1.2 queries posed over views, by rewriting them into queries
+            over the data those views are defined on. Views are SPARQL CONSTRUCT queries that get unfolded
+            into the user query, after which a pipeline of optimisations produces a query any SPARQL engine can answer.
+            This allows, for example, running SPARQL 1.2 queries over RDF 1.1 data.
+        {/snippet}
+        {#snippet additionalLinks()}
+            <IconsSvg name="laptopCode" height="30px"
+                      href="https://2026-query-rewriting.demo.jitsedesmet.be"
+                      arialLabel="Try the SPARQL View Unfold demo live"
+                      --color-hover="var(--color-tertiary)"
+            />
+            <IconsSvg name="npm" height="30px"
+                      href="https://www.npmjs.com/package/sparql-view-unfold"
+                      arialLabel="SPARQL View Unfold on npm"
+                      --color-hover="var(--color-tertiary)"
+            />
+        {/snippet}
+    </LinkProjectBox>
+    <LinkProjectBox
             href="https://comunica.github.io/traqula/"
             title="Traqula"
     >
@@ -27,6 +50,45 @@
             <IconsSvg name="github" height="30px"
                       href="https://github.com/comunica/traqula"
                       arialLabel="Explore the source code of Traqula"
+                      --color-hover="var(--color-tertiary)"
+            />
+        {/snippet}
+    </LinkProjectBox>
+    <LinkProjectBox
+            href="https://comunica.dev/"
+            title="Comunica"
+    >
+        {#snippet img()}
+            <img  alt="Comunica logo" src="/comunica-logo.svg">
+        {/snippet}
+        {#snippet info()}
+            Comunica is a knowledge graph querying framework for JavaScript,
+            enabling flexible SPARQL and GraphQL querying over decentralized RDF on the Web.
+            Its modular architecture allows engines to be assembled from independent building blocks,
+            making it a platform for research on query processing.
+        {/snippet}
+        {#snippet additionalLinks()}
+            <IconsSvg name="github" height="30px"
+                      href="https://github.com/comunica/comunica"
+                      arialLabel="Explore the source code of Comunica"
+                      --color-hover="var(--color-tertiary)"
+            />
+        {/snippet}
+    </LinkProjectBox>
+    <LinkProjectBox
+            href="https://github.com/jitsedesmet/ORset-RDF-store"
+            title="OR-Set RDF Store"
+    >
+        {#snippet info()}
+            OR-Set RDF Store is a proof-of-concept RDFjs-compliant triple store implementing an add-wins OR-Set CRDT.
+            It lets multiple clients read and write the same RDF graph concurrently, even while offline,
+            and later reconcile their changes over HTTP without conflicts.
+            The CRDT metadata is stored inline using RDF 1.2 triple terms.
+        {/snippet}
+        {#snippet additionalLinks()}
+            <IconsSvg name="npm" height="30px"
+                      href="https://www.npmjs.com/package/orset-rdf-store"
+                      arialLabel="OR-Set RDF Store on npm"
                       --color-hover="var(--color-tertiary)"
             />
         {/snippet}
