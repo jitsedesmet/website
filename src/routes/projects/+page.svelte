@@ -53,8 +53,8 @@
                       --color-hover="var(--color-tertiary)"
             />
             <IconsSvg name="npm" height="30px"
-                      href="https://www.npmjs.com/search?q=traqula"
-                      arialLabel="Traqula packages on npm"
+                      href="https://www.npmjs.com/package/@traqula/parser-sparql-1-2"
+                      arialLabel="Traqula SPARQL 1.2 parser on npm"
                       --color-hover="var(--color-tertiary)"
             />
         {/snippet}
