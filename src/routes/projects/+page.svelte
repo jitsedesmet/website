@@ -52,6 +52,11 @@
                       arialLabel="Explore the source code of Traqula"
                       --color-hover="var(--color-tertiary)"
             />
+            <IconsSvg name="npm" height="30px"
+                      href="https://www.npmjs.com/search?q=traqula"
+                      arialLabel="Traqula packages on npm"
+                      --color-hover="var(--color-tertiary)"
+            />
         {/snippet}
     </LinkProjectBox>
     <LinkProjectBox
